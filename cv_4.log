@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.30)  6 SEP 2020 21:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.30)  1 OCT 2020 01:27
 entering extended mode
 **./cv_4.tex
 (cv_4.tex
@@ -476,7 +476,7 @@ Package rerunfilecheck Info: File `cv_4.out' has not changed.
 Here is how much of TeX's memory you used:
  5888 strings out of 483145
  95329 string characters out of 2955492
- 370451 words of memory out of 3000000
+ 370492 words of memory out of 3000000
  21147 multiletter control sequences out of 15000+200000
  539087 words of font info for 42 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -491,9 +491,9 @@ s/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/sean/Library/Applicat
 ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></U
 sers/sean/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
 amsfonts/cm/cmti10.pfb>
-Output written on cv_4.pdf (3 pages, 107885 bytes).
+Output written on cv_4.pdf (3 pages, 108097 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
