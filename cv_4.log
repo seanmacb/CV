@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.11)  26 JAN 2023 21:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.11)  4 MAR 2023 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,34 +459,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \end{itemize}
+l.30 \end{itemize}
                   
 ? 
 [1
 
 {/usr/local/texlive/2021basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3]
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 216--216
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 240--240
 []|\OT1/cmr/m/n/10.95 11/2021| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 217--217
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 241--241
 []|\OT1/cmr/m/n/10.95 05/2020| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 218--218
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 242--242
 []|\OT1/cmr/m/n/10.95 05/2020| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 219--219
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 243--243
 []|\OT1/cmr/m/n/10.95 09/2018| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 220--220
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 244--244
 []|\OT1/cmr/m/n/10.95 08/2018| 
  []
 
@@ -497,21 +497,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 \end{rSubsection}
+l.247 \end{rSubsection}
                        
 ? 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 227--227
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 251--251
 []|\OT1/cmr/m/n/10.95 06/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 228--228
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 252--252
 []|\OT1/cmr/m/n/10.95 08/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 229--229
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 253--253
 []|\OT1/cmr/m/n/10.95 04/2018| 
  []
 
@@ -522,7 +522,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.232 \end{rSubsection}
+l.256 \end{rSubsection}
                        
 ? 
 [4] (./cv_4.aux)
@@ -536,7 +536,7 @@ Here is how much of TeX's memory you used:
  26057 multiletter control sequences out of 15000+600000
  407429 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 83i,9n,88p,597b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,9n,88p,597b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -544,7 +544,7 @@ cm/cmmi10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb>
-Output written on cv_4.pdf (4 pages, 96115 bytes).
+Output written on cv_4.pdf (4 pages, 97802 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
