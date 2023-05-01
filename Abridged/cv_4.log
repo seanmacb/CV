@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.11)  1 MAY 2023 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.11)  1 MAY 2023 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,7 +519,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 \end{rSubsection}
+l.97 \end{rSubsection}
                       
 ? 
 
@@ -529,7 +529,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.104 \end{rSubsection}
+l.103 \end{rSubsection}
                        
 ? 
 
@@ -539,7 +539,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 \end{rSubsection}
+l.110 \end{rSubsection}
                        
 ? 
 
@@ -549,7 +549,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.119 \end{rSubsection}
+l.118 \end{rSubsection}
                        
 ? 
 
@@ -559,7 +559,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 \end{rSubsection}
+l.126 \end{rSubsection}
                        
 ? 
 
@@ -569,7 +569,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 \end{rSubsection}
+l.131 \end{rSubsection}
                        
 ? 
 
@@ -579,7 +579,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \end{rSubsection}
+l.137 \end{rSubsection}
                        
 ? 
 
@@ -589,7 +589,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 \end{rSubsection}
+l.157 \end{rSubsection}
                        
 ? 
 
@@ -599,7 +599,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 \end{rSubsection}
+l.164 \end{rSubsection}
                        
 ? 
 
@@ -609,7 +609,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 \end{rSubsection}
+l.171 \end{rSubsection}
                        
 ? 
 [1
@@ -622,7 +622,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.183 \end{rSubsection}
+l.182 \end{rSubsection}
                        
 ? 
 
@@ -632,11 +632,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.188 \end{rSubsection}
+l.187 \end{rSubsection}
                        
 ? 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 263--263
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 262--262
 []|\OT1/cmr/m/n/10.95 11/2021| 
  []
 
@@ -647,9 +647,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.266 \end{rSubsection}
+l.265 \end{rSubsection}
                        
 ? 
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 270--270
+[]|\OT1/cmr/m/n/10.95 05/2020| 
+ []
+
 
 Overfull \hbox (2.90904pt too wide) in paragraph at lines 271--271
 []|\OT1/cmr/m/n/10.95 05/2020| 
@@ -657,16 +662,11 @@ Overfull \hbox (2.90904pt too wide) in paragraph at lines 271--271
 
 
 Overfull \hbox (2.90904pt too wide) in paragraph at lines 272--272
-[]|\OT1/cmr/m/n/10.95 05/2020| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 273--273
 []|\OT1/cmr/m/n/10.95 09/2018| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 274--274
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 273--273
 []|\OT1/cmr/m/n/10.95 08/2018| 
  []
 
@@ -677,26 +677,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 \end{rSubsection}
+l.276 \end{rSubsection}
                        
 ? 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 282--282
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 281--281
 []|\OT1/cmr/m/n/10.95 06/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 283--283
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 282--282
 []|\OT1/cmr/m/n/10.95 03/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 284--284
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 283--283
 []|\OT1/cmr/m/n/10.95 08/2018| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 285--285
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 284--284
 []|\OT1/cmr/m/n/10.95 04/2018| 
  []
 
@@ -707,7 +707,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.288 \end{rSubsection}
+l.287 \end{rSubsection}
                        
 ? 
 
@@ -717,7 +717,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.294         \begin{enumerate}
+l.293         \begin{enumerate}
                                
 ? 
 [2] (./cv_4.aux)
@@ -725,11 +725,11 @@ Package rerunfilecheck Info: File `cv_4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 8901 strings out of 480445
- 132745 string characters out of 5892390
+ 8899 strings out of 480445
+ 132721 string characters out of 5892390
  441405 words of memory out of 5000000
- 26059 multiletter control sequences out of 15000+600000
- 407770 words of font info for 41 fonts, out of 8000000 for 9000
+ 26058 multiletter control sequences out of 15000+600000
+ 407424 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  83i,9n,88p,597b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/sean/Library/texlive/2021basic/texmf-var/fonts/pk/ljfour/jknappen/ec
@@ -737,12 +737,11 @@ Here is how much of TeX's memory you used:
 fonts/cm/cmbx10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_4.pdf (2 pages, 82446 bytes).
+/public/amsfonts/cm/cmsy10.pfb>
+Output written on cv_4.pdf (2 pages, 62687 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
