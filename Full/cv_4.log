@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.11)  1 MAY 2023 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.11)  29 SEP 2023 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,7 +466,7 @@ l.24     \end{rSubsection}
 
 {/usr/local/texlive/2021basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] [4]
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 262--262
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 268--268
 []|\OT1/cmr/m/n/10.95 11/2021| 
  []
 
@@ -477,26 +477,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.265 \end{rSubsection}
+l.271 \end{rSubsection}
                        
 ? 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 270--270
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 276--276
 []|\OT1/cmr/m/n/10.95 05/2020| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 271--271
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 277--277
 []|\OT1/cmr/m/n/10.95 05/2020| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 272--272
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 278--278
 []|\OT1/cmr/m/n/10.95 09/2018| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 273--273
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 279--279
 []|\OT1/cmr/m/n/10.95 08/2018| 
  []
 
@@ -507,26 +507,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.276 \end{rSubsection}
+l.282 \end{rSubsection}
                        
 ? 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 281--281
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 287--287
 []|\OT1/cmr/m/n/10.95 06/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 282--282
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 288--288
 []|\OT1/cmr/m/n/10.95 03/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 283--283
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 289--289
 []|\OT1/cmr/m/n/10.95 08/2018| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 284--284
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 290--290
 []|\OT1/cmr/m/n/10.95 04/2018| 
  []
 
@@ -537,9 +537,10 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 \end{rSubsection}
+l.293 \end{rSubsection}
                        
 ? 
+[5]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -547,21 +548,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.293         \begin{enumerate}
+l.299         \begin{enumerate}
                                
 ? 
-[5] (./cv_4.aux)
+[6] (./cv_4.aux)
 Package rerunfilecheck Info: File `cv_4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 8902 strings out of 480445
- 132739 string characters out of 5892390
- 441405 words of memory out of 5000000
+ 8903 strings out of 480445
+ 132745 string characters out of 5892390
+ 443405 words of memory out of 5000000
  26058 multiletter control sequences out of 15000+600000
  407424 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 83i,9n,88p,597b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,9n,88p,597b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/sean/Library/texlive/2021basic/texmf-var/fonts/pk/ljfour/jknappen/ec
 /tcrm1095.600pk></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public
@@ -569,10 +570,10 @@ fonts/cm/cmbx10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type1/public
 blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021basic/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on cv_4.pdf (5 pages, 80738 bytes).
+Output written on cv_4.pdf (6 pages, 82530 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 68 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
