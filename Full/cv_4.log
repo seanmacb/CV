@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.29)  30 APR 2024 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.29)  3 AUG 2024 18:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -426,36 +426,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 19.
 
 
-./cv_4.tex:25: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv_4.tex:24: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25     \end{rSubsection}
+l.24     \end{rSubsection}
                           
 ? s
 OK, entering \scrollmode...
 
-./cv_4.tex:31: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv_4.tex:30: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31     \end{rSubsection}
+l.30     \end{rSubsection}
                           
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./cv_4.tex:41: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv_4.tex:40: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 \end{rSubsection}
+l.40 \end{rSubsection}
                       
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -464,112 +464,113 @@ If that doesn't work, type  X <return>  to quit.
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Overfull \hbox (8.061pt too wide) in paragraph at lines 128--129
+Overfull \hbox (8.061pt too wide) in paragraph at lines 132--133
 []\OT1/cmr/m/n/10.95 Performed main-te-nance on the as-tron-omy dome to en-sure
  con-tin-u-ous ob-ser-va-tions us-ing P.A.N.O.P.T.E.S. 
  []
 
 [3] [4]
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 273--273
-[]|\OT1/cmr/m/n/10.95 11/2021| 
- []
 
-
-./cv_4.tex:276: LaTeX Error: Something's wrong--perhaps a missing \item.
+./cv_4.tex:280: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.276 \end{rSubsection}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 281--281
-[]|\OT1/cmr/m/n/10.95 05/2020| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 282--282
-[]|\OT1/cmr/m/n/10.95 05/2020| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 283--283
-[]|\OT1/cmr/m/n/10.95 09/2018| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 284--284
-[]|\OT1/cmr/m/n/10.95 08/2018| 
- []
-
-
-./cv_4.tex:287: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.287 \end{rSubsection}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/10.95 03/2024| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 293--293
-[]|\OT1/cmr/m/n/10.95 06/2019| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 294--294
-[]|\OT1/cmr/m/n/10.95 03/2019| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 295--295
-[]|\OT1/cmr/m/n/10.95 08/2018| 
- []
-
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 296--296
-[]|\OT1/cmr/m/n/10.95 04/2018| 
- []
-
-
-./cv_4.tex:299: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.299 \end{rSubsection}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./cv_4.tex:307: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.307             \item
+l.280             \item
                         \href{https://digitalrepository.wheatoncollege.edu/h...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}] (./cv_4.aux)
+}]
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 291--291
+[]|\OT1/cmr/m/n/10.95 11/2021| 
+ []
+
+
+./cv_4.tex:294: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.294 \end{rSubsection}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 299--299
+[]|\OT1/cmr/m/n/10.95 05/2020| 
+ []
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 300--300
+[]|\OT1/cmr/m/n/10.95 05/2020| 
+ []
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 301--301
+[]|\OT1/cmr/m/n/10.95 09/2018| 
+ []
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 302--302
+[]|\OT1/cmr/m/n/10.95 08/2018| 
+ []
+
+
+./cv_4.tex:305: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 \end{rSubsection}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 310--310
+[]|\OT1/cmr/m/n/10.95 03/2024| 
+ []
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 311--311
+[]|\OT1/cmr/m/n/10.95 06/2019| 
+ []
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 312--312
+[]|\OT1/cmr/m/n/10.95 03/2019| 
+ []
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 313--313
+[]|\OT1/cmr/m/n/10.95 08/2018| 
+ []
+
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 314--314
+[]|\OT1/cmr/m/n/10.95 04/2018| 
+ []
+
+
+./cv_4.tex:317: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 \end{rSubsection}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[6] (./cv_4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -578,13 +579,13 @@ Package rerunfilecheck Info: File `cv_4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9625 strings out of 474116
- 151627 string characters out of 5743682
- 1942187 words of memory out of 5000000
+ 9626 strings out of 474116
+ 151633 string characters out of 5743682
+ 1938187 words of memory out of 5000000
  31874 multiletter control sequences out of 15000+600000
  562409 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,79p,597b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,10n,79p,597b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -592,10 +593,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on cv_4.pdf (5 pages, 108832 bytes).
+Output written on cv_4.pdf (6 pages, 109452 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
