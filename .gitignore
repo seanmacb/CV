@@ -1,2 +1,10 @@
-**.log
-**.out
+.DS_Store
+Abridged/*.log
+Abridged/*.out
+Abridged/*.DS_Store
+Abridged/*.aux
+Full/*.log
+Full/*.DS_Store
+Full/*.aux
+Full/*.out
+texput.log
