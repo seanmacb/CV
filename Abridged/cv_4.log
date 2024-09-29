@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.29)  30 APR 2024 10:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.29)  29 SEP 2024 12:07
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **cv_4.tex
 (./cv_4.tex
@@ -426,7 +425,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 18.
 
 
-./cv_4.tex:24: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -434,10 +433,9 @@ Type  H <return>  for immediate help.
                                                   
 l.24     \end{rSubsection}
                           
-? s
-OK, entering \scrollmode...
+? 
 
-./cv_4.tex:30: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -445,11 +443,9 @@ Type  H <return>  for immediate help.
                                                   
 l.30     \end{rSubsection}
                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:40: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -457,11 +453,9 @@ Type  H <return>  for immediate help.
                                                   
 l.40 \end{rSubsection}
                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:76: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -469,47 +463,39 @@ Type  H <return>  for immediate help.
                                                   
 l.76 \end{rSubsection}
                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:82: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \end{rSubsection}
+l.83 \end{rSubsection}
                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:88: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 \end{rSubsection}
+l.89 \end{rSubsection}
                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:96: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \end{rSubsection}
+l.95 \end{rSubsection}
                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:103: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -517,35 +503,29 @@ Type  H <return>  for immediate help.
                                                   
 l.103 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:109: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \end{rSubsection}
+l.110 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:115: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 \end{rSubsection}
+l.116 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:122: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -553,74 +533,62 @@ Type  H <return>  for immediate help.
                                                   
 l.122 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:130: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 \end{rSubsection}
+l.129 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:138: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \end{rSubsection}
+l.137 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:143: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.143 \end{rSubsection}
+l.145 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:149: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{rSubsection}
+l.150 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:162: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162 \end{rSubsection}
+l.156 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-./cv_4.tex:169: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -628,11 +596,9 @@ Type  H <return>  for immediate help.
                                                   
 l.169 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:176: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -640,11 +606,9 @@ Type  H <return>  for immediate help.
                                                   
 l.176 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:183: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -652,23 +616,19 @@ Type  H <return>  for immediate help.
                                                   
 l.183 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:193: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 \end{rSubsection}
+l.190 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:200: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -676,116 +636,114 @@ Type  H <return>  for immediate help.
                                                   
 l.200 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:205: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.205 \end{rSubsection}
+l.207 \end{rSubsection}
                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 280--280
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 \end{rSubsection}
+                       
+? 
+
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 287--287
 []|\OT1/cmr/m/n/10.95 11/2021| 
  []
 
 
-./cv_4.tex:283: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.283     \end{rSubsection}
+l.290     \end{rSubsection}
                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 288--288
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 295--295
 []|\OT1/cmr/m/n/10.95 05/2020| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 296--296
 []|\OT1/cmr/m/n/10.95 05/2020| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 290--290
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 297--297
 []|\OT1/cmr/m/n/10.95 09/2018| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 291--291
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 298--298
 []|\OT1/cmr/m/n/10.95 08/2018| 
  []
 
 
-./cv_4.tex:294: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.294     \end{rSubsection}
+l.301     \end{rSubsection}
                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }]
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 299--299
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 306--306
 []|\OT1/cmr/m/n/10.95 06/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 300--300
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 307--307
 []|\OT1/cmr/m/n/10.95 03/2019| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 301--301
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 308--308
 []|\OT1/cmr/m/n/10.95 08/2018| 
  []
 
 
-Overfull \hbox (2.90904pt too wide) in paragraph at lines 302--302
+Overfull \hbox (2.90904pt too wide) in paragraph at lines 309--309
 []|\OT1/cmr/m/n/10.95 04/2018| 
  []
 
 
-./cv_4.tex:305: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.305     \end{rSubsection}
+l.312     \end{rSubsection}
                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+? 
 
-
-./cv_4.tex:313: LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.313             \item
+l.320             \item
                         \href{https://digitalrepository.wheatoncollege.edu/h...
 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [3] (./cv_4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -807,7 +765,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on cv_4.pdf (3 pages, 75495 bytes).
+Output written on cv_4.pdf (3 pages, 75470 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
