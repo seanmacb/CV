@@ -3,10 +3,10 @@ Abridged/cv_4.log
 Abridged/cv_4.out
 Abridged/.DS_Store
 Abridged/cv_4.aux
-Full/cv_4.log
-Full/.DS_Store
-Full/cv_4.aux
-Full/cv_4.out
+**/cv_4.log
+**/.DS_Store
+**/cv_4.aux
+**/cv_4.out
 texput.log
 Abridged/cv_4.fls
 Abridged/cv_4.fdb_latexmk
