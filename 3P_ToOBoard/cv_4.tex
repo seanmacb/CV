@@ -1,0 +1,426 @@
+% pdflatex file_name.tex
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{textcomp}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\usepackage{ragged2e}
+\justifying
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\name{Sean MacBride} % Your name
+% \address{40 Wildwood Drive \\ Burlington, VT 05408} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{\href{mailto:Sean.P.MacBride@gmail.com}{Email} \\ \href{https://github.com/seanmacb}{GitHub: \texttt{seanmacb}} \\ \href{https://seanmacb.github.io}{Personal website} \\ \href{tel:+18029224673}{+1 (802) 922 4673}} %\\ \href{https://www.linkedin.com/in/sean-macbride/}{LinkedIn}}% Your phone number and email
+% Add website when it's finished
+\usepackage{seqsplit}
+\begin{document}
+\begin{rSection}{Education}
+    \begin{rSubsection}
+        {University of Zürich, Zürich, Switzerland}{May 2024 - Present}{Ph.D. in Physics}{}
+    \end{rSubsection}
+    
+    \begin{rSubsection}
+        {University of Michigan, Ann Arbor Michigan}{Aug 2022 - May 2024}{M.Sc. in Physics}{}
+        
+% \item Obtained the U-M Graduate Teacher Certificate from the Center for Research on Learning and Teaching.
+    \end{rSubsection}
+
+% \begin{tabular}{ @{} >{\hspace{5mm}\bfseries}l @{\hspace{2ex}} l }
+% Awards & Wheaton Centennial Grant for tremendous academic promise\\
+% & Boggess Family Foundation scholarship for achievements in physics
+% \end{tabular}
+\begin{rSubsection}{Wheaton College, Norton Massachusetts}{Aug 2016 - May 2020}{B.A. in Physics, Honors. Minor in Astronomy}{}
+   \begin{itemize}
+    \item Thesis title: \textit{\href{https://digitalrepository.wheatoncollege.edu/handle/11040/31192}{Characterizing the Dust and Cold-Gas Content of Nearby Star-Forming Galaxies. MacBride, Sean Patrick. 2020, May 10.  Wheaton College Digital Repository, 2020.}}
+   \end{itemize}
+    % \item Studied spring 2019 at University College London
+    % \item Elected captain of the Wheaton College men's rugby team during 2019-2020 season. Elected match secretary from 2017-2019. Elected club safety officer from 2017-2019.
+\end{rSubsection}
+
+% \\ Studied Spring 2019 at University College London \hfill %{Astronomy GPA: 3.93}
+
+\end{rSection}
+
+% \begin{rSection}{Skills}
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}} l }
+% Communication & Active listening, collaborative discussion, constructive feedback, empathy\\
+% Management & Strong time management, organized and reliable, composure under stress\\
+% Presentation & Articulate public speaker, effective communication in technical writing \\
+% Tools and Design & Electrical measurement, hand, and power tools, 3-D printers, electronics\\
+% Laboratory Skills & Lasers, sample preparation, spectrometers, precise instrumentation\\
+% Astronomy Operations & Optical telescopes, CCD cameras, dome and instrument maintenance\\
+% Computer Systems & Expert with Mac, Windows, and Linux systems, adept with MS Office\\
+% % Data Analysis &  NumPy, mathematical modeling, data pipeline management\\
+% Computer Languages &  Python, MATLAB, C++, Shell, Mathematica, \LaTeX, \href{https://github.com/seanmacb}{Git}, SolidWorks\\
+% Python Packages & Jupyter, MatPlotLib, Seaborn, Pandas, NumPy, SciPy, Emcee\\
+%
+%
+% % AstroImageJ, APT
+% \end{tabular}
+% \end{rSection}
+
+\begin{rSection}{Research}
+
+\begin{rSubsection}{University of Zürich/University of Michigan}{Apr 2023 - Present}{Ph.D Student}{Prof. Marcelle Soares-Santos}
+
+    \item \textbf{Rubin Observatory:} Led the Target-of-Opportunity observing program during the Rubin science validation period. Contributed to Target-of-Opportunity strategy development for gravitational wave, neutrino, and solar system object events. Implemented community defined strategies to the \texttt{rubin\_scheduler}, including modifications to the Rubin ToO observing strategy for the science validation period after receiving feedback from members of multiple LSST science collaborations. Led observation, coordination, and analysis of ToO events during the SV period, including interstellar comet 3I/ATLAS and binary black-hole merger S250725j.
+    \item \textbf{LSST Camera:} Led verification, integration, and testing of the LSST Camera for the Rubin Observatory on Cerro-Pachón in Chile, from receipt on summit through science validation surveys. Characterized defects in LSST Camera, including the picture-frame response in different detector types and vampire pixels. Contributed to commissioning the telescope mount assembly of the Simonyi Telescope. Led $\sim100$ days of LSST Camera shift work as a lead shifter, responsible for the safe and efficient operation of LSST Camera.
+    \item \textbf{Dark Energy Science Collaboration:} Started the standard sirens topical team in the modeling and combined probes group, focused on combining gravitational wave data and galaxy catalogs to constrain cosmology. Leading a project focusing on the impacts of galaxy catalog completeness on parameter estimation using dark sirens. Obtained a 2,750 node-hour computing grant from the National Energy Research Scientific Computing Center to support this research. Co-authoring the dark sirens section of the DESC-DESI-II white paper.
+     \item \textbf{Dark Energy Survey:} Implemented improvements to Dark Energy Survey gravitational wave pipeline, including improvements to the telescope strategy and real-time monitoring. Performed observations, image processing, and analysis of images from the Dark Energy Camera in response to gravitational wave triggers from LIGO observing run 4. Organized collaboration between the  Japanese collaboration for Gravitational wave ElectroMagnetic follow-up and DESGW through joint observations of GW event S250328ae using DECam and the Prime Focus Spectrograph at Subaru Observatory. 
+   % \item \textbf{Image Sensors}: Designed a new testing apparatus for testing image sensors for astronomical applications using vacuum, thermal, and optical subsystems. Coordinated a collaboration between Fermilab National Accelerator Laboratory and University of Zürich to exchange specialized sensors from DECam and Oscura experiments for testing and verification at the University of Zürich. 
+   %  \item \textbf{Robotic Positioners}: Tested Dark Energy Spectroscopic Instrument (DESI) robotic positioners to increase precision and improve low performing robotic positioners on the DESI focal plane. Characterized a common failure mode of DESI positioners and resolved the failure with a reproducible solution. Authored and submitted an internal report and presented the results of this study to the DESI focal plane working group. Led dynamic testing of prototype robotic positioner performance through lifetime, focal-ratio degradation, and fiber angle tests using different telescope configurations.
+\end{rsubSection}
+
+
+
+% \begin{rSubsection}{University of Michigan}{Jan 2023 - Apr 2023}{Graduate Student Research Assistant}{Prof. Keith Riles}
+%     \item Wrote code to model gravitational-wave ringdown signal of binary neutron star merger.
+%     \item Developed detection statistics for measuring if the model template is properly detecting injected gravitational wave signal. 
+%     \item Tested different signal models to ensure robustness of detection statistics under different model conditions.
+% \end{rSubsection}
+
+
+\begin{rSubsection}{University of Michigan \& Southwest Research Institute}{Feb 2023}{Graduate Observer - NASA LUCY}{Prof. David Gerdes (UM) \& Marc Buie (SwRI)}
+    \item Participated in a ground-based observation campaign to study the occultation of the Jupiter trojan asteroid 15094 Polymele. Authored procedure used by 50+ team members, detailing process to configure Celestron telescope mount, optics, and software in efficient manner.
+    \item Coordinated 1,100+ miles of travel to observation site location. Trained other team members in telescope setup and resolved issues with hardware and software in preparation for occultation event.
+    \item Successfully captured field of observation during occultation event. Contributed data to NASA-LUCY ground based occultation team, which confirmed 15094 Polymele's surface features and prescence of smaller orbiting satellite.
+\end{rSubsection}
+
+
+
+% \begin{rSubsection}{Massachusetts Institute of Technology}{Nov 2020 - Jul 2022}{Technician - LLAMAS}{G\'abor F\^ur\'esz (PI) \& Mark Egan (Engineering supervisor)}
+% \item Assembled and modified opto-mechanical mounts and ground support equipment for \textit{Large Lenslet Array Magellan Spectrograph} (LLAMAS) instrument according to assembly drawings. Inspected custom-fabricated parts using a coordinate measurement machine and prepared reports detailing measurements.
+% \item Tested the efficiency of diffraction gratings at nominal orientation. Modified existing test equipment to measure blaze-angle transmission. Authored report detailing procedure, methods, results, and analysis.
+% \item Prepared  adhesives for bonding handling tabs to optical components. Bonded camera lenses into bezels. Developed and modified bonding procedure to best accommodate changing circumstances. 
+% \item Designed protective covers, fixtures, and tools using SolidWorks. Collaborated using different version control software - Git and SolidWorks PDM. Wrote software for precise control of DC servo motors, used to ensure highest standards of spectrograph fiber bonding and integration.
+% \item Loaded and unloaded optical fibers into anti-reflective coating fixtures. Integrated the AR-coated fibers to the spectrograph by bonding with optical adhesive, with 100\% accuracy. Authored and modified the fiber bonding and protective tube-pulling procedure to meet evolving science and safety needs.
+% \end{rSubsection}
+
+% \begin{rSubsection}{Massachusetts Institute of Technology}{May 2021 - Nov 2021}{Research Assistant - STARSPOT}{G\'abor F\^ur\'esz (MIT) \& Jennifer Burt (NASA-JPL)}
+% % \item Organized meetings between MIT-Astronomical Instrumentation Team members and scientific collaborators. Presented research plans with technical collaborators to establish project goals and develop data transfer protocol.
+% \item Developed a data pipeline for concatenating single-day observations from a multi-channel optical solar-spectrometer. Modified pipeline routine to maintain compatibility with different data structures. Utilized data pipeline to collect spectrophotometry from different solar events.
+% \item Created data analysis tools and objects for studying solar events obtained by spectrometer. Compared ground-based data to International Space Station observations from same epochs. Studied correlations between historical S-index, magnetic activity, total solar irradiance, and spectral solar irradiance.
+% \item Determined limit of detection of solar events for the ground-based optical spectrometer. Pipeline and data tools served as supporting evidence in several forthcoming publications that describe the proposed space-based project scope.
+% \end{rSubsection}
+
+% \newpage
+
+% \begin{rSubsection}{University College London \& Wheaton College}{May 2019 - Jul 2020}{Honors Thesis Student}{Prof. Am\'{e}lie Saintonge (UCL) \& Prof. Dipankar Maitra (WC)}
+% \item Coordinated joint thesis project between UCL and Wheaton College. Authored honors thesis detailing scientific rationale, results, and central conclusions of study. Presented to Wheaton and UCL faculty and students for critique and discussion. Received highest marks from faculty of both schools.
+% \item Designed and implemented python data pipeline for use with derived data from xCOLD GASS, JINGLE, and SDSS galaxy surveys. Developed a linear Markov-chain Monte Carlo sampler to constrain relationship of cold-gas and dust components of star-forming galaxies from Balmer emission. Generalized the sampler to higher dimensions to include the inclination-dependent reddening in the calibration.
+% \end{rSubsection}
+
+
+% \begin{rSubsection}{University College London}{Jan 2019 - Mar 2019}{Group Lead}{Prof. Thanh Nguyen}
+% \item Led research group of 8 UCL students to determine the detection limits of lateral flow assays using photo-thermal heating of magnetic nanoparticles. Resolved conflicts between group members and determined group structure. Coordinated laboratory logistics and safety measures between student group and the Royal Institute of London.
+% \item Prepared ferromagnetic nanoparticle solution and samples for observation. Designed setup of infrared laser and sample apparatus. Obtained and analyzed temperature data from a thermal camera for determination of optimal membrane type and solution concentration.
+% \item Collaborated and authored report detailing group processes, results, \& analysis. Received highest marks from UCL faculty and Royal Institute staff.
+% \end{rSubsection}
+
+% \begin{rSubsection}{Rutgers University New Brunswick}{May 2018 - Aug 2018}{REU Research Assistant}{Prof. Carlton Pryor}
+% \item Improved proficiencies in Pandas, NumPy, SciPy, and other data analysis tools to support investigations of dwarf satellite galaxy orbits.
+% \item Designed, implemented, and modified data pipeline for use with ESA Gaia space telescope DR-2 data selections of dwarf satellite galaxies. Discovered small scale tidal tail around central core of dwarf satellite galaxy Carina using radial density measurements.
+% \item Prepared and presented progress reports to Prof. Pryor on a weekly basis. Prepared and delivered final presentation at summer research symposium and to professors and graduate students of the physics and astronomy department.
+% % \item Presented Results at 234th meeting of the American Astronomical Society in St.  Louis, Missouri
+% \end{rSubsection}
+
+
+% \begin{rSubsection}{Wheaton College}{Aug 2017 - Dec 2018}{Student astronomy projects}{Prof. Dipankar Maitra}
+% \item Designed and 3D printed a mount for projection of sunlight on a 4.5" reflector telescope. Obtained and analyzed solar spectrum using a spectroscope. Observed spectral limb-reddening resulting from gas densities similar to the chromosphere. Authored report detailing methods, results, and analysis.
+% \item Retrieved archived photometry from V404 Cygni outburst event obtained at Wheaton College in June 2015. Analyzed data using Aperture Photometry Tool. Identified two outburst events on the night of June 27, separated by roughly one hour. Authored report detailing methods, results, and analysis.
+% \item Determined specifications of diffraction grating for use with DSLR camera. Obtained spectrum of Vega and Capella using grating and 30s exposure. Identified iron absorption features in both stars. Authored report detailing methods, results, and analysis.
+% \item Retrieved x-ray binary data taken by MAXI x-ray telescope. Implemented Lomb-Scargle periodogram techniques to derive orbital periods of four different x-ray binary systems. Derived slight differences in period of binary 2S 1417-624. Authored report detailing methods, results, and analysis.
+% \end{rSubsection}
+
+% \newpage
+
+% \begin{rSubsection}{Project P.A.N.O.P.T.E.S.}{Sep 2017 - Dec 2018}{Student Researcher}{James Synge (Google Cambridge)}
+% \item Communicated between professors at Wheaton and outside collaborators to install, operate, and maintain autonomous exoplanet telescope inside Wheaton College observatory dome.
+% \item Aligned P.A.N.O.P.T.E.S. exoplanet telescope for observation according to polar-alignment procedure using hand tools.
+% \item Performed maintenance on the astronomy dome to ensure continuous observations using P.A.N.O.P.T.E.S.
+% \item Modified existing dome control code for weather-automated and manual remote operation of telescope.
+% % \item Presented P.A.N.O.P.T.E.S. research at Northeast Astronomy Forum 2018
+% \end{rSubsection}
+
+
+% \begin{rSubsection}{NASA Langley Research Center}{May 2017 - Aug 2017}{Summer Intern}{Dr. Brian Walsh}
+% \item Designed, built, and operated a 2.1 \& 1.06 $\mu$m pump source for proof of concept atmospheric-monitoring mid-infrared Lanthanide-LuAG laser.
+% \item Programmed a model to determine resonator stability based on resonator dimensions and elements. Determined resonator quality through spectroscopic tests.
+% \item Performed spectroscopy on resonator components using mid-infrared and optical spectrometers. Optimized resonator setup from outcomes of spectroscopic tests and model predictions.
+% \end{rSubsection}
+
+% \begin{rSubsection}{Wheaton College}{Dec 2016 - May 2017}{Undergraduate Research Assistant}{Prof. John Collins}
+% \item Built Nd:YAG laser resonators from individual components. Modified existing laser configurations as necessary, including soldering new trigger circuits for a q-switch.
+% \item  Determined threshold energies for spontaneous emission using different resonator specifications.
+% \item Exercised safe and appropriate use of voltmeters, oscilloscopes, and other electric and optical equipment.
+% \end{rSubsection}
+
+\end{rSection}
+
+% \newpage
+
+% \begin{rSection}{Teaching}
+
+% \begin{rSubsection}{University of Michigan Physics Department}{May 2023 - Jun 2024}{Lead Graduate Student Instructor}{Ann Arbor, MI}
+%     \item Organized course administration, including worksheet development, lab procedures, and grading practices, for introductory physics lab that serves 1000+ students and $\sim$15 graduate instructors each term.
+%     \item Acted as a liason between undergraduate students, graduate instructors, introductory lab support staff, and faculty. Resolved grading disputes through collecting all pertinent information, meeting with undergraduate students, and meeting with department chairs and parents of students, on occasion.
+%     \item Led three teaching workshops for first-year students over four days throughout the academic year. Reformed training workshops for new graduate student instructors to better prepare them for teaching. Created additional workshops with other lead instructors and new graduate instructors to familiarize new instructors with how to manage classroom social dynamics. 
+% \end{rSubsection}
+
+% \begin{rSubsection}{University of Michigan Physics Department}{Aug 2022 - Dec 2022}{Graduate Student Instructor}{Ann Arbor, MI}
+%     \item Led laboratory sections of undergraduate students in life sciences disciplines through weekly labs focused on introductory physics concepts. 
+%     \item Student feedback average of 4.72/5 in teacher evaluations related to instruction. Answered questions pertaining to lab content, fundamental concepts, and course policies throughout lab session.
+%     \item Held office hours once a week to assist students in all introductory physics classes with homework problems, exam preparation, and comprehension of fundamental concepts of physics. Organized meetings with struggling students outside of usual hours and tailored class sessions to better meet students needs
+
+% \end{rSubsection}
+% \newpage 
+% \begin{rSubsection}{Wheaton College Physics Department}{Aug 2018 - Dec 2019}{Teaching Assistant}{Norton, MA}
+%     \item Increased engagement of Introductory Physics I \& II students with in-class problems \& labs through effective communication and classroom instruction.
+%     \item Performed laboratory setup and breakdown for class of 40+ students in accordance with schedule.
+%     \item Communicated student comprehension of specific topics to professors to increase participation.
+
+% \end{rSubsection}
+% % \newpage
+% \begin{rSubsection}{Wheaton College Physics Department}{Aug 2018 - Dec 2018}{Physics Tutor}{Norton, MA}
+%     \item Assisted students with understanding concepts of physics to support problem sets and exam preparation.
+%     \item Increased engagement with struggling students by meeting outside of regular tutoring hours, communicated deficiencies to professors to optimize the classwork plan.
+%     \item Participated in tutor development meetings to enhance instruction and communication skills.
+
+% \end{rSubsection}
+
+% \end{rSection}
+
+% \begin{rSection}{Outreach}
+
+% \begin{rSubsection}{Rubin Observatory}{Jan 2025 - July 2025}{LSST Camera Scientist}{Cerro Pachón, Chile}
+%     \item Provided interviews to the \href{https://youtu.be/6RBZqhIgllI?si=WJu_PTFMFdWa_h7s}{BBC}, the \href{https://www.wsj.com/science/space-astronomy/worlds-largest-digital-camera-snaps-its-first-photos-of-the-universe-68099904?mod=Searchresults_pos1&page=1}{Wall Street Journal}, Bloomberg, and other publications.
+%     \item Answered questions from journalists over email regarding LSSTCam statistics, commissioning status, and other information in line with DOE/NSF embargo policies.
+%     \item Gave tours to media and local dignitaries to showcase LSSTCam performance, features, and known issues.
+% \end{rSubsection}
+
+% \begin{rSubsection}{University of Michigan-Southern Illinois University}{Aug 2023 - May 2024}{Eclipse Group Leader}{Albuquerque NM, Burlington VT}
+%     \item Led high school group of students to operate a solar telescope and take images of the sun during the 2023 annular eclipse and 2024 total eclipse.
+%     \item Teach high students from about physics of the sun, solar observations, and eclipses through virtual and in person presentations.
+%     \item Successfully operated and captured images of the 2023 annular eclipse on site in Albuquerque NM, and 2024 total eclipse on site in Burlington VT.
+%     \item Encouraged safe and responsible observations and discussed the science of eclipses with the public through several local news outlets, including \href{https://www.mynbc5.com/article/total-eclipse-nasa/60433342?utm_campaign=snd-autopilot}{NBC-5}, \href{https://www.vermontpublic.org/local-news/2024-04-10/nasa-volunteer-photo-eclipse-burlington-sun-atmosphere}{Vermont Public Radio}, and \href{https://www.essexreporter.com/news/physics-masters-student-collects-data-for-nasa-and-national-science-foundation-from-eclipse-in-burlington/article_1b7a72a8-76d5-52b7-8ffa-886491f640a4.html}{the Essex Reporter}
+% \end{rSubsection}
+
+
+
+% \begin{rSubsection}{Wheaton College Astronomy Department}{Aug 2016 - May 2020}{Observatory Guide}{Norton, MA}
+%     \item Showcased features of different telescopes to local tour groups at Wheaton College Observatory.
+%     \item Operate and adjust telescopes to show appropriate stars, objects, and events based on sky conditions.
+%     \item Educated children and adults in how to locate objects and explained features about the objects on sky.
+
+% \end{rSubsection}
+% \end{rSection}
+% \newpage
+
+
+% \begin{rSection}{Mentorship}
+% \begin{rSubsection}{University of Zürich}{}{}{}
+%     \item Banan Yamani: Masters Student at UZH
+%     \item Yavuz Gencel: Masters Student at UZH
+% \end{rSubsection}
+
+% \begin{rSubsection}{University of Michigan, Ann-Arbor}{}{}{}
+%     \item Elise Kesler: Incoming Physics PhD student at CU Boulder
+%     \item Tim Fanning: Physics PhD student at Indiana University Bloomington
+% \end{rSubsection}
+
+% \end{rSection}
+
+
+
+% \begin{rSection}{Department Service}
+%     \begin{itemize}
+%         \item With support from others, organized the Conferences for Undergraduate Women in Physics (CUWiP) 2024 at the University of Michigan-Ann Arbor.
+%         \item Designed art installation in University of Michigan Physics help room showcasing previous experiences by graduates of the undergraduate program, highlighting struggles overcame and success in their later lives.
+%         \item Member of University of Michigan physics graduate council from 2022 - 2024. 
+%         \item Lead organizer and host of physics graduate student symposium in 2023, a weekly speaker series highlighting research projects from several departments in the University of Michigan.
+%     	\item Member of UM physics DEI committee from 2022 - 2024.
+% 	\item Member of APS chapter at UM from 2022 - 2024.
+%         \item Member and peer advisor of the Wheaton College physics club from 2016-2020.
+%     \end{itemize}
+% \end{rSection}
+
+%\begin{rSection}{Public Service}
+%
+%\begin{rSubsection}{Best Buddies}{Aug 2016 - Apr 2017}{Bud}{Norton, MA}
+ %   \item Worked as a role model for a Norton MA resident with disabilities, including calling resident once a week, texting with resident about daily activities, and monthly meet-ups with resident.
+%    \item Assisted group leaders with monthly programming, including reserving event space, organizing smaller workshop groups with other buds, and managing catering orders.
+%\end{rSubsection}
+
+%\end{rSection}
+
+% \begin{rSection}{Coursework}
+% \begin{multicols}{3}
+    % \begin{itemize}[label={}]\setlength\itemsep{-6pt}
+    %     \item \textbf{Astronomy}
+    %     \item[$\star$] The Universe
+    %     \item[$\star$] Rocket Science
+    %     \item[$\star$] Intro to Astrophysics
+    %     \item[$\star$] Observational Astronomy
+    %     \item[$\star$] Interstellar Physics (UCL)
+    %     \item[$\star$] Physical Cosmology (UCL)
+    %
+    %     \item \textbf{Physics}
+    %     \item[$\star$] Classical Mechanics
+    %     \item[$\star$]  Statistical Mechanics
+    %     \item[$\star$] Group Project (UCL)
+    %     \item[$\star$]  Electricity \& Magnetism
+    %     \item[$\star$] Quantum Mechanics
+    %     \item[$\star$] Fluid Mechanics
+    %
+    %     \item \textbf{Math and CS}
+    %     \item[$\star$] Robots, Games, \& Problem Solving
+    %     \item[$\star$] Differential Equations
+    %     \item[$\star$] Multivariable Calculus
+    %     \item[$\star$] Scientific Computing
+    %     \item[$\star$] Data Structures
+    %     \item[$\star$] Linear Algebra
+    %
+    % \end{itemize}
+    % \end{multicols}
+
+% \itab{\textbf{Astronomy Courses}} \tab{\textbf{Physics Courses}} \tab{\textbf{Other Courses}}
+% \\ \itab{The Universe} \tab{Quantum Mechanics} \tab{Robots, Games, \& Problem Solving}
+% \\ \itab{Intro to Astrophysics} \tab{Classical Mechanics} \tab{Scientific Computing}
+% \\ \itab{Observational Astronomy} \tab{Statistical \& Thermal Physics} \tab{Data Structures}
+% \\ \itab{Interstellar Physics} \tab{Electricity \& Magnetism} \tab{Differential Equations}
+% \\ \itab{Physical Cosmology} \tab{Group Project (Biophysics)}  \tab{Multivariable Calculus}
+% \\ \itab{Rocket Science} \tab{Fluid Mechanics} \tab{Linear Algebra}
+
+% \begin{rSection}{Professional Service}
+%     \begin{itemize}
+%         \item
+%     \end{itemize}
+%     \end{rSection}
+%\newpage
+    % \begin{rSection}{Awards}
+%         \begin{itemize}
+    %         \item Awarded the Wheaton Centennial Grant for tremendous academic promise
+        %     \item Awarded the Boggess Family Foundation scholarship for achievements in physics
+        % \end{itemize}
+                
+% \end{rSection}
+
+% \end{rSection} % probably only use this in
+
+% \newpage
+\begin{rSection}{Publications}
+
+% As of \textbf{date XX}, some blurb about relevant citation statistics here.
+
+Below are selected publications from different collaborations and projects. A full list of publications can be found on my \href{https://scholar.google.com/citations?user=XtRTswUAAAAJ&hl=en}{Google Scholar profile} or on \href{https://ui.adsabs.harvard.edu/search/fq=\%7B!type\%3Daqp\%20v\%3D\%24fq_database\%7D&fq_database=(database\%3Aastronomy\%20OR\%20database\%3Aphysics)&p_=0&q=((\%20author\%3A\%22Macbride\%2C\%20Sean\%22)\%20AND\%20year\%3A2019-2150)&sort=date\%20desc\%2C\%20bibcode\%20desc}{the astrophysics data system}.
+
+    \begin{rSubsection}{Rubin Observatory}{}{}{} % All of these are in chicago format
+        \begin{enumerate}
+        \item \href{https://arxiv.org/pdf/2507.13409}{NSF-DOE Vera C. Rubin Observatory Observations of Interstellar Comet 3I/ATLAS (C/2025 N1) . Chandler, Bernardelli, ... \textbf{MacBride}, ... 21 July 2025.} 
+        \item \href{https://arxiv.org/abs/2411.04793}{Rubin ToO 2024: Envisioning the Vera C. Rubin Observatory LSST Target of Opportunity program. Andreoni, Margutti, ... \textbf{MacBride} ... 7 Nov 2024.} 
+        \end{enumerate}
+            
+    \end{rSubsection} 
+    \begin{rSubsection}{LSST Camera}{}{}{}
+        \begin{enumerate}
+            \item \href{https://sitcomtn-148.lsst.io/}{LSST Camera Electro-Optical Test (Run 7) Results. The LSST Camera group: Antilogus, ... \textbf{MacBride}, ... 5 May 2025.} 
+        \end{enumerate}
+    \end{rSubsection}
+    
+    \begin{rSubsection}{Dark Energy Survey}{}{}{} % All of these are in chicago format
+        \begin{enumerate}
+            \item \href{https://arxiv.org/abs/2508.00291}{A Joint Search for the Electromagnetic Counterpart to the Gravitational-Wave Binary Black-Hole Merger Candidate S250328ae with the Dark Energy Camera and the Prime Focus Spectrograph. Zhang, Kokubo, \textbf{MacBride}, ... 1 Aug 2025.} 
+            \item The Implementation of a Robust Observing Strategy for Discovering Optical Counterparts to Gravitational Wave Events. Fuller, \textbf{MacBride}, McMahon, ... in prep.
+            
+        \end{enumerate}
+            
+    \end{rSubsection}    
+
+    % \begin{rSubsection}{Robotic Positioners}{}{}{} % All of these are in chicago format
+    %     \begin{enumerate}
+    %         \item \href{https://arxiv.org/abs/2503.07923}{The Stage-5 Spectroscopic Experiment. Besuner, Dey, ... \textbf{MacBride} ... 12 Mar 2025.}
+            
+    %     \end{enumerate}
+            
+    % \end{rSubsection}
+\begin{rSection}{Presentations}
+
+\begin{rSubsection}{Talks}{}{}{}
+
+Entries marked with a * indicate an invited talk.
+
+    \begin{table}[h]
+\begin{tabular}{p{0.07\linewidth} p{0.88\linewidth}}
+% 09/2025 & Status of the Rubin Target of Opportunity Program, LSST @ Europe 7, Poznan, Poland\\
+09/2025 & Commissioning LSSTCam for Rubin Observatory, LSST @ Europe 7, Poznan, Poland\\
+09/2025* & Status of the Rubin Target of Opportunity Program, 5th Philip Wetton Workshop, Oxford University, England\\
+07/2025* & LSSTCam Commissioning Status, Rubin Community Workshop 2025, Tucson AZ, USA\\
+06/2025* & Status of the Rubin Observatory Target of Opportunity Program, LIGO Seminar Series, Virtual\\
+06/2025* & Status of the Rubin Observatory Target of Opportunity Program, MIT General Relativity Informal Tea-Time Series, Cambridge, MA, USA\\
+05/2025 & S250328ae: Joint observations with DECam and the Prime Focus Instrument at Subaru Observatory, The Dark Energy Survey Collaboration Meeting 2025, Virtual\\
+05/2025* & \href{https://github.com/scimma/openMMA/wiki/Telecon20250522}{Status of the Rubin Target of Opportunity Program, OpenMMA Telecon, Virtual}\\
+03/2025 & LSSTCam Performance and Readiness, APS March meeting 2025, Anaheim CA, USA\\
+02/2025* & \href{https://docs.google.com/presentation/d/18RmTzV5id9RSE4_1xui-RJvK5FeGknrt8Ro1nBn32nk/edit?usp=sharing}{Plenary: LSSTCam Performance and Readiness, DESC Collaboration meeting, Virtual}\\
+% 02/2025* & Live Tour from the Mountain with the LSSTCam team! DESC Collaboration meeting, Virtual\\
+02/2025* & \href{https://docs.google.com/presentation/d/12EPsuWSixo40_oqrDPNaXstYnqDzhI_2aFL2hd7IwTE/edit#slide=id.g2ade3bc380_0_0}{LSSTCam Electro-optical Testing Status and Discussion, DESC Collaboration meeting, Virtual}\\
+% 11/2021* & LLAMAS Assembly Integration and Testing, Wheaton College, Norton MA, USA\\
+% 05/2020 & Undergraduate honors thesis research, Wheaton College, MA, USA, Virtual\\ 
+% % 05/2020 & Undergraduate honors thesis research, University College London, Virtual\\
+% 09/2018 & REU research on dwarf satellite galaxies, Wheaton College, Norton MA, USA\\
+% 08/2018 & REU research on dwarf satellite galaxies, Rutgers University, New Brunswick NJ, USA\\
+\end{tabular}
+\end{table}
+\end{rSubsection}
+
+\begin{rSubsection}{Posters}{}{}{}
+\begin{table}[h]
+\begin{tabular}{p{0.07\linewidth} p{0.88\linewidth}}
+03/2025 & LSSTCam Performance and Readiness, APS March meeting 2025, Anaheim CA, USA\\
+03/2024 & \href{https://indico.slac.stanford.edu/event/8442/contributions/8626/}{LSSTCam Defects, Image Sensors for Precision Astronomy 2024 at SLAC, Menlo Park CA, USA}\\
+% 06/2019 & \href{https://assets.pubpub.org/d14kkapv/41575915658488.pdf}{REU research on dwarf satellite galaxies, 234th AAS Meeting, St. Louis MO, USA}\\
+% 03/2019 & Magnetic nanoparticle research, UCL Physics department poster symposium, London UK\\
+% 08/2018 & REU research on dwarf satellite galaxies, Rutgers University, New Brunswick NJ, USA\\
+% 04/2018 & Project P.A.N.O.P.T.E.S., Northeast Astronomy Forum, Suffern NY, USA\\
+\end{tabular}
+\end{table}
+\end{rSubsection}
+
+\end{rSection}
+
+
+    
+%    \begin{rSubsection}{Dark Energy Science Collaboration}{}{}{} % All of these are in chicago format
+%        \begin{enumerate}
+%            % \item
+%            
+%        \end{enumerate}
+%            
+%    \end{rSubsection}        
+%
+%    \begin{rSubsection}{Dark Energy Survey}{}{}{} % All of these are in chicago format
+%        \begin{enumerate}
+%            % \item
+%            
+%        \end{enumerate}
+%            
+%    \end{rSubsection}        
+%
+%    \begin{rSubsection}{Image Sensors}{}{}{} % All of these are in chicago format
+%        \begin{enumerate}
+%            % \item
+%            
+%        \end{enumerate}
+%            
+%    \end{rSubsection}        
+%    
+        
+
+
+    
+    %\item \href{https://digitalrepository.wheatoncollege.edu/handle/11040/31192}{Characterizing the Dust and Cold-Gas Content of Nearby Star-Forming Galaxies. MacBride, Sean Patrick. 2020, May 10.  Wheaton College Digital Repository, 2020.}
+\end{rSection}
+
+\end{document}
