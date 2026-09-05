@@ -118,8 +118,9 @@
   }\smallskip
   \begin{list}{\ding{228}}
   {\leftmargin=1em} % \cdot used for bullets, no indentation
-   % \itemsep 0.5em 
+   % \itemsep 0.5em
    \vspace{-0.5em} % Compress items in list together for aesthetics
+  \item[] % Allows body text with no explicit \item to follow without a "missing \item" error
   }{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
