@@ -1,0 +1,80 @@
+% pdflatex file_name.tex
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{textcomp}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\hindex}{8}
+\usepackage{ragged2e}
+\justifying
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable} % Lets the date/description lists in each rSection break across pages instead of being trapped in an unsplittable table float
+\usepackage{multicol}
+\usepackage{acronym}
+\newacro{DECam}[DECam]{Dark Energy Camera}
+\newacro{desc}[DESC]{Dark Energy Science Collaboration}
+\newacro{LSSTCam}[LSSTCam]{LSST-Camera}
+\newacro{ToO}[ToO]{Target-of-Opportunity}
+\newacro{igwn}[IGWN]{International Gravitational-Wave Observatory Network}
+\newacro{desgw}[DESGW]{Dark Energy Survey gravitational wave}
+\newacro{O4}[O4]{observing run 4}
+\newacro{J-GEM}[J-GEM]{Japanese collaboration for Gravitational wave ElectroMagnetic follow-up}
+\newacro{GW}[GW]{gravitational wave}
+\newacro{PFS}[PFS]{Prime Focus Spectrograph}
+\newacro{DELVE}[DELVE]{DECam Local Volume Exploration survey}
+\newacro{psi}[PSI]{Paul Scherrer Institute}
+\newacro{des}[DES]{Dark Energy Survey}
+\newacro{LLAMAS}[LLAMAS]{Large Lenslet Array Magellan Spectrograph}
+\newacro{NERSC}[NERSC]{National Energy Research Scientific Computing Center}
+\newacro{lsst}[LSST]{Legacy Survey of Space and Time}
+
+
+\renewcommand\labelitemi{\ding{226}}
+\name{Sean MacBride} % Your name
+\address{6 Balgriststrasse, Zürich, 8008, Switzerland \\ \href{tel:+18029224673}{+1 (802) 922 4673}} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{\href{mailto:sean.macbride@physik.uzh.ch}{\texttt{sean.macbride@physik.uzh.ch}} \\ \href{https://github.com/seanmacb}{\texttt{seanmacb} on GitHub} \\ \href{https://seanmacb.github.io}{\texttt{seanmacb.github.io}}} %\\ \href{https://www.linkedin.com/in/sean-macbride/}{LinkedIn}}% Your phone number and email
+% Add website when it's finished
+\usepackage{seqsplit}
+\begin{document}
+\input{sections/research_interests.tex}
+
+\input{sections/education.tex}
+
+
+\input{sections/scientific_collaborations.tex}
+
+
+\input{sections/professional_appointments.tex}
+
+\input{sections/approved_observing_programs.tex}
+\input{sections/selected_publications.tex}
+
+
+\input{sections/research_grants.tex}
+
+\input{sections/invited_talks.tex}
+
+\input{sections/contributed_talks.tex}
+
+
+\input{sections/conference_organization.tex}
+
+
+\input{sections/teaching.tex}
+
+\input{sections/mentorship.tex}
+
+% \input{sections/diversity_equity_inclusion.tex}
+
+\input{sections/outreach.tex}
+
+\input{sections/in_press.tex}
+
+
+\end{document}
