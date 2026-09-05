@@ -1,0 +1,215 @@
+%% Postdoctoral Research Statement
+%% Adapted from the SOP template at
+%% http://tex.stackexchange.com/questions/150900/latex-coding-for-statement-of-purpose
+%%
+%% Compile with:  pdflatex -> bibtex -> pdflatex -> pdflatex
+%% Requires references.bib alongside this file.
+
+\documentclass[10pt]{article}
+\usepackage[
+  a4paper,
+  margin=1in,
+  headsep=4pt, % separation between header rule and text
+]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{scholax}
+\usepackage{lastpage}
+\usepackage{enumitem}
+
+\usepackage{xcolor}
+\usepackage{marginnote}
+\newcommand{\TODO}[1]{%
+  \marginnote{\color{red}\textbf{TODO}}% Put 'TODO' in margin
+  {\color{red}#1}% Put the associated text in red in the body
+}
+
+%% ---------------------------------------------------------------
+%% Bibliography: natbib + BibTeX, author-year style.  Cite in-line
+%% with \citep{key} (parenthetical) or \citet{key} (textual).
+%% ---------------------------------------------------------------
+\usepackage[round,authoryear]{natbib}
+\bibliographystyle{ieeetr}
+\setlength{\bibsep}{2pt plus 0.3ex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily
+  % \yourname\quad
+  web: \textcolor{blue}{\yourweb}\quad
+  email: \textcolor{blue}{\youremail}}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+%% ---------------------------------------------------------------
+%% Personal-info macros: edit these once, they propagate everywhere.
+%% ---------------------------------------------------------------
+\newcommand{\yourname}{Sean MacBride}
+\newcommand{\youremail}{\href{mailto:sean.macbride@physik.uzh.ch}{sean.macbride@physik.uzh.ch}}
+\newcommand{\yourweb}{\href{https://seanmacb.github.io}{seanmacb.github.io}}
+
+\newcommand{\hindex}{8}
+\newcommand{\hindexDate}{August 2026}
+
+\newcommand{\soptitle}{Research Statement}
+
+%% Section-header macro (kept from the original SOP template)
+\newcommand{\statement}[1]{\par\medskip
+  \textcolor{blue}{\textbf{#1:}}%\hspace{0.05cm}
+}
+
+%% Highlight macro for spots the author should tailor per application
+%% (e.g. naming the specific host group, fellowship, or institution).
+\newcommand{\fillin}[1]{\textcolor{orange}{\textbf{[#1]}}}
+
+%% ---------------------------------------------------------------
+%% Recurring survey / collaboration / instrument acronyms.
+%%
+%% These are now managed by the `acro' package: each is declared once
+%% with a long and a short form, and \ac{...} automatically prints
+%% "Long Form (SHORT)" on first use and "SHORT" every time after.
+%% The user-facing macros (\LSST, \DESC, ...) are kept unchanged so
+%% the body text below did not have to be rewritten.
+%% ---------------------------------------------------------------
+\usepackage{acro}
+\acsetup{make-links=false}
+
+\DeclareAcronym{lsst}    {short = LSST,    long = Legacy Survey of Space and Time}
+\DeclareAcronym{lsstcam} {short = LSSTCam, long = LSST Camera}
+\DeclareAcronym{desc}    {short = DESC,    long = LSST-Dark Energy Science Collaboration}
+\DeclareAcronym{des}     {short = DES,     long = Dark Energy Survey}
+\DeclareAcronym{desi}    {short = DESI,    long = Dark Energy Spectroscopic Instrument}
+\DeclareAcronym{desgw}   {short = DESGW,   long = Dark Energy Survey Gravitational Wave follow-up program}
+\DeclareAcronym{delve}   {short = DELVE,   long = Dark Energy Local Volume Exploration}
+\DeclareAcronym{pfs}     {short = PFS,     long = Prime Focus Spectrograph}
+\DeclareAcronym{llamas}  {short = LLAMAS,  long = Large Lenslet Array Magellan Spectrograph}
+\DeclareAcronym{igwn}    {short = IGWN,    long = International Gravitational Wave Network}
+\DeclareAcronym{lvk}     {short = LVK,     long = LIGO-Virgo-Kagra}
+\DeclareAcronym{too}     {short = ToO,     long = Target-of-Opportunity}
+\DeclareAcronym{decam}   {short = DECam,   long = Dark Energy Camera}
+\DeclareAcronym{rubin}   {short = Rubin,   long = Vera C. Rubin Observatory}
+\DeclareAcronym{must}   {short = MUST,   long = MUltiplexed Survey Telescope}
+\DeclareAcronym{specsfive}   {short = Spec-S5,   long = Stage-5 Spectroscopic Experiment}
+\DeclareAcronym{jgem}    {short = J-GEM,
+                          long  = Japanese collaboration for gravitational-wave electromagnetic follow-up}
+
+\newcommand{\LSST}{\ac{lsst}}
+\newcommand{\LSSTCam}{\ac{lsstcam}}
+\newcommand{\DESC}{\ac{desc}}
+\newcommand{\DES}{\ac{des}}
+\newcommand{\DESI}{\ac{desi}}
+\newcommand{\DESGW}{\ac{desgw}}
+\newcommand{\DELVE}{\ac{delve}}
+\newcommand{\PFS}{\ac{pfs}}
+\newcommand{\LLAMAS}{\ac{llamas}}
+\newcommand{\IGWN}{\ac{igwn}}
+\newcommand{\LVK}{\ac{lvk}}
+\newcommand{\ToO}{\ac{too}}
+\newcommand{\DECam}{\ac{decam}}
+\newcommand{\JGEM}{\ac{jgem}}
+\newcommand{\must}{\ac{must}}
+\newcommand{\specsfive}{\ac{specsfive}}
+
+%% Non-acronym text macros (unchanged: these are names, not abbreviations)
+\newcommand{\Rubin}{\ac{rubin}}
+\newcommand{\Ho}{\ensuremath{H_0}}
+\newcommand{\Blanco}{V\'ictor M. Blanco 4-meter Telescope}
+\newcommand{\IceCube}{IceCube Neutrino Observatory}
+\newcommand{\Institute}{\TODO{Add Institution}}
+
+\usepackage[
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+\begin{document}
+\begin{center}\vspace{3pt}\LARGE\soptitle\\[4pt]
+\large \yourname
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule height 1pt
+
+\bigskip
+
+My research focuses on exploring the cosmic frontier using electromagnetic and gravitational wave data to constrain cosmology.
+This focus is underscored by a research program with three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
+These three pillars reflect the approach I aim to bring to my next postdoctoral position at \Institute, where each research activity is not viewed as separate, but as three legs of one research program, strongest when pursued together. 
+Here, I describe my past work in support of the three pillars of my research program, and my plans to adapt this program for the future.
+
+\statement{Astronomical Instrumentation}
+I believe that trustworthy astrophysical measurements begin with trustworthy astronomical instruments, which is why I have spent as much time building and characterizing hardware as I have spent on cutting-edge analysis. My instrumentation work has encompassed both photometric and spectroscopic instruments, with a specific focus on focal plane technology. % Opener
+
+This began with \LLAMAS, an integral field spectrograph for the Magellan Baade telescope. I validated the optical performance of the diffraction gratings and collimators for the \LLAMAS\ spectrographs, assembled and verified each of the 24 spectrograph camera optical assemblies, and integrated all 2,400 AR-coated fibers into the focal plane with zero fiber loss \citep{Simcoe2022LLAMAS}. \LLAMAS\ was commissioned in 2024, and is currently providing high fidelity spectroscopic data in the southern hemisphere \cite{llamas}. % LLAMAS
+After integrating and testing \LLAMAS, I shifted from integral-field spectrographs to multi-object spectrographs, retaining a focus on focal plane systems. While at the University of Michigan-Ann Arbor, I characterized and resolved a common failure mode on \DESI\ robotic positioners, known as the linear phi failure mode. While testing the \DESI\ positioners, I found that reorienting the robotic positioner to an inverted physical configuration could remove the linear phi behavior, indicating that gravity-sag has a significant influence on the failure mode \citep{Wuthrich2026Positioners}.  Recently, I have been testing robotic fiber positioners for next-generation spectroscopic focal planes, including the \must\ and the proposed \specsfive, and am currently leading fiber tilt-sensitivity tests of prototype positioners, including both static and dynamic measurements on a kinematic telescope mount. % Robotic positioners
+
+This expertise with spectroscopic instruments translated effectively to the transcendent photometric imager of the next decade, the \LSSTCam. Since 2024, I have served as an \LSSTCam\ Summit Support Scientist, leading the \LSSTCam's focal-plane commissioning on Cerro Pach\'on as a key component of the in-kind contribution from Switzerland to the Rubin Project. I tested the CCDs in both the summit clean-room, and on the Simonyi Survey Telescope, optimizing the CCD performance, including removal of a dominant instrumental signature in \LSSTCam\ images known as 'persistence'. This improvement, among other optimizations, is detailed in the invited proceedings of SPIE Astronomical Telescopes + Instrumentation 2026, the most important astronomical instrumentation conference \citep{MacBride2026LSSTCam}. Additionally, I characterized CCD defects in the \LSSTCam\ focal plane, and developed a custom image-processing tool to monitor defect stability over time. This tool is currently deployed alongside a range of other pipelines to monitor \LSSTCam\ focal plane health over the ten year \LSST\ \TODO{Cite this?}. % LSSTCam
+
+\statement{Multi-Messenger Astrophysics}
+I have led numerous observing campaigns using different telescopes and facilities, with the goal of detecting electromagnetic counterparts of gravitational wave events.
+
+Starting in 2023, I co-led the \DESGW\ program, conducting \DECam\ observations, processing raw image data to calibrated products, and analyzing processed data in response to \IGWN\ Observing Run 4 (O4) triggers \TODO{Cite the O4 analysis + some sort of direct deliverable from it, also the MI paper}. 
+% In addition to maintaining the day-to-day operations of the DESGW program during the IGWN O4 observing run, I improved the gravitational-wave alert-processing pipeline to provide high quality, low-latency information, to inform \ToO\ triggering decisions. Alongside improvements to the alert-processing pipeline, I augmented DESGW observing strategy by implementing changes to re-weight specific sky areas based on a variety of environmental and astrophysical conditions \TODO{Cite the MI paper, even if in-prep, plus a concrete metric from the paper}.
+During the \IGWN\ O4 observing run, when a well-localized gravitational-wave merger candidate provided an opportunity for multi-instrument observation and characterization, I led a collaboration between \DESGW\ and the \JGEM. In this collaboration, I obtained multi-epoch photometry using \DECam, and cross-matched this data with spectroscopic observations using \PFS\ at Subaru Telescope, producing the first published scientific paper using \PFS\ \citep{Zhang2025S250328ae}. This data serves a dual purpose, providing valuable transient characterization information, and also serving as the foundation for a measurement of \Ho\ using spectroscopic data.
+
+Starting in 2025, I have been leading the \Rubin\ \ToO\ observing program as the \Rubin\ \ToO\ observer. Since the inception of the \Rubin\ \ToO\ program, I have led observing responses to one interstellar object \citep{Chandler_2026}, one high-energy neutrino event, and two gravitational-wave merger candidates, including the deepest wide-area gravitational wave \ToO\ to date ($m_{r,5\sigma}\sim24.4$, imaging $\sim800\deg^2$ on four nights). 
+The process to build, test, and deploy an automated \ToO\ system for \Rubin\ is reflected in the recent proceedings of SPIE Astronomical Telescopes + Instrumentation 2026 \citep{MacBride2026RubinToO}, closely following the community-defined science case for the program \citep{Andreoni2024RubinToO}. In addition to building the \Rubin\ \ToO\ system, I have led extensive testing of the \Rubin\ \ToO\ infrastructure with the \IGWN\ and \IceCube\ collaborations, including two mock-data-challenges to assess the average latency of a \Rubin\ \ToO\ response, the accuracy of our alert processing pipeline, and the sensitivity of simulated \Rubin\ observations to optical counterparts \citep{MacBride2025MDC}\TODO{Add a metric from the mock-data-challenge}. 
+
+\statement{Standard Siren Cosmology}
+While large observing campaigns have not yielded an electromagnetic counterpart to a gravitational wave merger in recent \IGWN\ observing runs, I have retained a focus on constraining cosmology using electromagnetic and gravitational wave data, employing the \textit{dark siren} method to measure the expansion rate of the local universe, \Ho.
+
+This work began by supporting the preparation of \DES\ data, resulting in the first dark siren constraint to use a deep photometric catalog to jointly infer gravitational wave population parameters and cosmological parameters \citep{McMahon2026DESY6H0}. \DES\ was accepted as the fiducial \Ho\ result for the most recent \IGWN\ analysis, and demonstrated a 22\% improvement in constraining \Ho\ \citep{LVK2026GWTC5}. Building on the \DES\ analysis, I am now leading a dark-siren analysis using the \DELVE\ galaxy catalog, where initial results show \DELVE\ outperforms \DES, obtaining an \Ho\ constraint at 11\% precision when combined with the bright siren GW170817 \citep{MacBride2026DELVEH0}. % DES+DELVE
+
+With the imminent arrival of \LSST\ data, I have been forecasting the constraining power of dark sirens using simulated \LSST\ data under a range of survey conditions for \DESC. Following the recent release of \LSST\ data from Data Preview 2, I am now leading the first dark siren measurement using \LSST\ data, as a pathfinding measurement ahead of the wide-area data release from Data Release 1. %, supported by a 3M CPU-hour NERSC Science At Scale grant. % LSST DP2
+
+In addition to making standard siren measurements using existing data, I have been assessing how to best improve cosmological constraints through redshift precision alone, with an eye to future specialized surveys. This effort aims to identify the most efficient use of telescope resources to maximize dark siren constraints, using both the spectroscopic observations obtained as part of the \DESGW\ collaboration with \JGEM, and augmenting photometric redshifts using medium band observations from \DECam\ in an accepted observing program where I am a Co-I, leading the image processing. % NORTHSTARS + PRIMO
+
+\statement{Future Research Activities}
+% \begin{itemize}
+%     \item Standard Sirens
+%     \begin{itemize}
+%         \item LSST measurements
+%         \item photo-z explorations for standard siren measurements
+%         \item combined probes using LSST+GW
+%     \end{itemize}
+%     \item multi-messenger
+%     \begin{itemize}
+%         \item Sustain LSST ToO capabilities
+%         \item Complement LSST ToO's with additional imaging
+%         \item Enhance ToO followup with more spectra
+%     \end{itemize}
+%     \item instrumentation
+%     \begin{itemize}
+%         \item Maintain operations support with LSSTCam
+%         \item Identify need: more spectra in the South (small/mid-scale experiments)
+%         \item Engage with Spec-S5 as the large scale cosmic frontier experiment of the future
+%     \end{itemize}
+% \end{itemize}
+% My past work establishes that the limiting factor in standard-siren cosmology is no longer the gravitational-wave data, but the galaxy catalog -- its depth, completeness, and above all its redshift precision. My program over the next five years attacks that limit across all three pillars.
+
+\textit{Instrumentation:} 
+% I will maintain operations support for LSSTCam, including the focal-plane defect-monitoring pipeline I built and deployed, keeping me responsible for the data quality on which every measurement above depends. Beyond Rubin, my spectroscopic follow-up work identifies a concrete capability gap: the southern hemisphere is spectroscopically under-resourced relative to LSST's imaging reach, and transient and host-galaxy redshifts are the scarce resource. I will quantify this need in survey-design terms -- how many redshifts, of which galaxies, at what precision, most improve a dark-siren constraint per hour of telescope time -- and use the answer to motivate a small- or mid-scale southern spectroscopic experiment, a natural vehicle for instrument-development funding and student projects. On the largest scale, I will engage Spec-S5 as the cosmic frontier experiment of the next decade, converting my focal-plane experience from LLAMAS, the DESI linear-phi failure mode, and my ongoing MUST and Spec-S5 positioner tilt-sensitivity measurements into a defined role setting fiber-positioning and target-density requirements.
+
+\textit{Standard sirens:} 
+% My first priority is to deliver dark-siren cosmology with LSST. Building on my Data Preview 2 pathfinder, I will produce the first wide-area LSST dark-siren $H_0$ measurement using Data Release 1 together with the O5 transient catalog, targeting [X]\% precision with a demonstrated systematic floor below the statistical error. Reaching that floor requires resolving the photometric-redshift systematic directly, and I will do so by extending the \texttt{gwcosmo} framework I currently modify for DELVE into a public, catalog-agnostic treatment that propagates full photo-$z$ posteriors, luminosity-function evolution, and spatially varying depth into the cosmological likelihood. My DES-to-DELVE comparison already shows catalog choice shifting $H_0$ at the [Y]\% level; formalizing why is a self-contained, fundable question, and the resulting code is a community deliverable rather than a single measurement. With that machinery in hand, I will pursue a combined-probes analysis in which the same LSST catalog supplies both the galaxy clustering signal and the dark-siren host prior, with the shared covariance modeled rather than assumed away -- an analysis no existing pipeline performs, and the natural route to constraining $\Omega_m$ and modified gravitational-wave propagation alongside $H_0$.
+
+
+\textit{Multi-messenger astrophysics:} 
+% I will sustain and mature LSST target-of-opportunity capability through the LVK IR1 and O5 runs, implementing the readiness metrics, quantitative success criteria, and mock-alert cadence I recommended in the ToO operations paper; the measurable outcomes are a documented median alert-to-shutter latency and a published per-target-class sensitivity assessment. Rubin alone, however, cannot characterize a counterpart. I will therefore complement LSST ToO responses with targeted imaging on smaller-aperture and medium-band facilities to fill cadence and wavelength gaps Rubin leaves, extending the DECam medium-band program in which I lead the image processing, and enhance follow-up with rapid spectroscopy through the DESGW--J-GEM model I established with PFS. The scientific objective is that the first bright siren of the LSST era yields a joint electromagnetic and gravitational-wave $H_0$ measurement, not merely a light curve.
+
+
+Concrete near-term benchmarks are 
+% the LSST DR1 dark-siren measurement and public photo-$z$ framework within two years, a southern spectroscopic requirements paper by year three, and a funded follow-up or instrument program by year five. On a longer horizon, these activities converge on a single southern pipeline running from alert to redshift to posterior, and on a few-percent $H_0$ derived independently of both the Cepheid--supernova ladder and the CMB -- an independent arbiter of the $H_0$ tension, extensible to dark-energy and gravitational-wave-propagation constraints as catalogs grow with A$^\sharp$ and Einstein Telescope.
+
+
+\bigskip
+\statement{References}
+{\small A full publication list is available on \href{https://scholar.google.com/citations?user=XtRTswUAAAAJ}{Google Scholar} and \href{https://ui.adsabs.harvard.edu/search/q=((author%3A%22MacBride%2C%20S.%22)%20AND%20year%3A2017-2100)&sort=date%20desc%2C%20bibcode%20desc&ui_tag=results%2Fgraph%2Fyear&p_=0}{NASA ADS} (h-index \hindex\ as of \hindexDate).}
+\renewcommand{\refname}{}
+\vspace{-2\baselineskip}
+{\footnotesize\bibliography{references}}
+
+\end{document}

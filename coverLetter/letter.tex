@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec} % remove/replace with [T1]{fontenc} if not using XeLaTeX/LuaLaTeX
+
+\usepackage{xcolor}
+\usepackage{marginnote}
+\newcommand{\TODO}[1]{%
+  \marginnote{\color{red}\textbf{TODO}}% Put 'TODO' in margin
+  {\color{red}#1}% Put the associated text in red in the body
+}
+
+% All editable fields (recipient, position, blanks, etc.) live in macros.tex
+\input{macros}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{flushright}
+\textbf{\ApplicantName}\\
+\ApplicantTitle \\
+\ApplicantInstitutionName\\
+% \ApplicantInstitutionAddressLine, \ApplicantInstitutionCityLine\\
+\end{flushright}
+
+\vspace{1.5em}
+
+\vspace{1em}
+\RecipientName \hfill \LetterDate \\
+% \RecipientTitle\\
+\RecipientInstitution, \RecipientDept\\
+% \RecipientAddress
+
+% \vspace{1em}
+Dear \RecipientName,
+
+\vspace{0.5em}
+
+I am writing to express my strong interest in the \PositionTitle\ position in your group at \RecipientInstitution. My expertise in astronomical instrumentation, gravitational-wave cosmology, and multi-messenger astrophysics aligns closely with \HostGroupDescriptor, and will positively contribute to the research environment at \RecipientInstitution.
+
+I believe my expertise fits extremely well with the core goals of \RecipientInstitution. As a \ApplicantTitle at \ApplicantInstitutionName, I led the development of cutting-edge instrumentation for cosmology and astrophysics. This includes commissioning the focal plane array of the LSST Camera at Rubin Observatory, testing robotic positioners for the DESI instrument and future Stage-V spectroscopic surveys, and in a previous role, delivering the fiber run and spectrograph cameras for the LLAMAS instrument at the Magellan Baade telescope. Parallel to developing and commissioning innovative instrumentation, I head several distinct research programs in multimessenger cosmology and astrophysics, with a focus on extracting cosmological parameters using standard siren observations from multiple instruments and facilities. This includes the Rubin Observatory, the Dark Energy Camera, the Prime Focus Spectrograph, and the LIGO-Virgo-Kagra gravitational wave observatory. In addition to maximizing data from existing facilities, I am preparing analysis techniques and observing strategies for future gravitational wave observatories, including Stage-V Spectroscopic facilities for electromagnetic data, and Cosmic Explorer, the Einstein Telescope, and the Laser Interferometer Space Antenna for gravitational wave data. 
+
+
+Through these activities, I have become an active and engaged member of the leading ground based electromagnetic observatories 
+(Legacy Survey of Space and Time Dark Energy Science Collaboration, Rubin Observatory Project) 
+and gravitational wave observatories
+(LIGO-Virgo-Kagra, the Laser Interferometer Space Antenna), 
+and have established a group of collaborators spanning the United States, Chile, France, Italy, Japan, Great Britain, Germany, Switzerland, and Spain.
+
+I have enclosed my CV and publication list for your consideration. Additionally, \ReferenceOne, \ReferenceTwo, and \ReferenceThree\ would be happy to provide references on my behalf.
+
+Thank you for your consideration. I would welcome the opportunity to discuss how my background could contribute actively to ongoing projects, and bring new dimensions of expertise to your group.
+
+\vspace{1.5em}
+All the best,\\ \\ \\
+\ApplicantName
+
+\end{document}
