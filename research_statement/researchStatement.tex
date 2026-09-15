@@ -6,22 +6,30 @@
 %% Requires references.bib alongside this file.
 
 \documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1} 
 \usepackage[
   a4paper,
-  margin=1in,
+  margin=0.75in,
   headsep=3pt, % separation between header rule and text
 ]{geometry}
+\usepackage[most]{tcolorbox}
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{scholax}
 \usepackage{lastpage}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
+
 \usepackage{wrapfig}
 \usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{blindtext}
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{marginnote}
 \usepackage{caption}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
 \DeclareCaptionFont{customsizefig}{\fontsize{10pt}{10pt}\selectfont}
 \DeclareCaptionFont{customsizesubfig}{\fontsize{9pt}{9pt}\selectfont}
 \captionsetup[figure]{font=customsizefig}
@@ -30,7 +38,7 @@
   \marginnote{\color{red}\textbf{TODO}}% Put 'TODO' in margin
   {\color{red}#1}% Put the associated text in red in the body
 }
-
+\setlist[itemize]{itemsep=-0.1cm, topsep=0pt, leftmargin=1.2em}
 %% ---------------------------------------------------------------
 %% Bibliography: natbib + BibTeX, author-year style.  Cite in-line
 %% with \citep{key} (parenthetical) or \citet{key} (textual).
@@ -42,7 +50,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[C]{%
-  \footnotesize\sffamily
+  \footnotesize\rmfamily
   web: \textcolor{blue}{\yourweb}\quad
   \yourname\quad
   email: \textcolor{blue}{\youremail}}
@@ -83,6 +91,8 @@
 
 \DeclareAcronym{lsst}    {short = LSST,    long = Legacy Survey of Space and Time}
 \DeclareAcronym{lsstcam} {short = LSSTCam, long = LSST Camera}
+\DeclareAcronym{gw} {short = GW, long = gravitational wave}
+\DeclareAcronym{em} {short = EM, long = electromagnetic}
 \DeclareAcronym{desc}    {short = DESC,    long = LSST-Dark Energy Science Collaboration}
 \DeclareAcronym{des}     {short = DES,     long = Dark Energy Survey}
 \DeclareAcronym{desi}    {short = DESI,    long = Dark Energy Spectroscopic Instrument}
@@ -97,7 +107,6 @@
 \DeclareAcronym{rubin}   {short = Rubin,   long = Vera C. Rubin Observatory}
 \DeclareAcronym{must}   {short = MUST,   long = MUltiplexed Survey Telescope}
 \DeclareAcronym{3G}   {short = 3G,   long = third generation}
-
 \DeclareAcronym{specsfive}   {short = Spec-S5,   long = Stage-5 Spectroscopic Experiment}
 \DeclareAcronym{LISA}   {short = LISA,   long = Laser Interferometer Space Antenna}
 \DeclareAcronym{hyperk}   {short = Hyper-K,   long = Hyper Kamiokande}
@@ -107,6 +116,7 @@
 \DeclareAcronym{UNIONS}   {short = UNIONS,   long = The Ultraviolet Near-infrared Optical Northern Survey} 
 
 \newcommand{\LSST}{\ac{lsst}}
+\newcommand{\EM}{\ac{em}}
 \newcommand{\threeG}{\ac{3G}}
 \newcommand{\UNIONS}{\ac{UNIONS}}
 \newcommand{\LSSTCam}{\ac{lsstcam}}
@@ -122,6 +132,7 @@
 \newcommand{\ToO}{\ac{too}}
 \newcommand{\DECam}{\ac{decam}}
 \newcommand{\JGEM}{\ac{jgem}}
+\newcommand{\GW}{\ac{gw}}
 \newcommand{\must}{\ac{must}}
 
 \newcommand{\specsfive}{\ac{specsfive}}
@@ -134,7 +145,9 @@
 \newcommand{\Ho}{\ensuremath{H_0}}
 \newcommand{\Blanco}{V\'ictor M. Blanco 4-meter Telescope}
 \newcommand{\IceCube}{IceCube Neutrino Observatory}
+
 \newcommand{\Institute}{\TODO{Add Institution}}
+\newcommand{\Position}{\TODO{Add Position}}
 
 \usepackage[
   breaklinks,
@@ -144,45 +157,40 @@
 ]{hyperref}
 
 \begin{document}
-\begin{center}\vspace{2pt}\LARGE\soptitle\\
-\large \yourname\\
-\vspace{2pt}
-\end{center}
 \hrule
-\vspace{2pt}
+\begin{center}
+    \Large\soptitle\ -- \yourname
+\end{center}
+\normalsize
+\vspace{0pt}
+\hrule
+\vspace{1pt}
 \hrule height 1pt
-\bigskip
-My research focuses on exploring the cosmic frontier using electromagnetic and gravitational wave data.
-This focus is underscored by three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
-These three pillars reflect the approach I aim to bring to \Institute, where each research activity is not viewed as separate, but as three legs of one research program, strongest when pursued together. 
-\begin{figure*}[bh]
-    \centering
-    \begin{subfigure}[b]{0.32\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/placeholder.pdf}
-        \caption{Removal of the persistence effect, a dominant residual charge effect in LSSTCam sensors \cite{MacBride2026LSSTCam}.}
-        \label{fig:highlights:lsstcam}
-    \end{subfigure}%
-    \hfill
-    \begin{subfigure}[b]{0.32\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/20251114_obs.jpg}
-        \caption{The deepest wide area ToO search to date, for GW candidate S251112cm \cite{MacBride2026RubinToO}.}
-        \label{fig:highlights:s251112cm_search}
-    \end{subfigure}%
-    \hfill
-    \begin{subfigure}[b]{0.32\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figures/delve_result.png}
-        \caption{$H_0$ constraints using Gravitational Wave Transient Catalogue 5 and the DELVE galaxy catalog \cite{MacBride2026DELVEH0}.}
-        \label{fig:highlights:delve_result}
-    \end{subfigure}
-    \caption{A summary of early career contributions, spanning instrumentation, multi-messenger astrophysics, and standard siren cosmology.}
-    \label{fig:highlights}
-\end{figure*}
+\vspace{6pt}
 
-\statement{Early Career Achievements}
-My past work has been in direct support of the three pillars of my research program, and includes commissioning the focal plane array of \LSSTCam, producing the first science result for the \PFS, conducting the first \ToO\ searches for electromagnetic counterparts to gravitational waves using \Rubin, and measuring \Ho\ using the \DELVE\ galaxy catalog.
+\noindent My research focuses on exploring the cosmic frontier using astronomical instrumentation, multi-messenger astrophysics, and standard siren cosmology.
+In this research proposal, I will describe how my research experience and leadership has prepared me for a \Position\ at \Institute.
+\hrule
+\begin{tcolorbox}[
+  colback=blue!5!white,      % Interior background color
+  colframe=blue!75!black,    % Outer border color
+  title=Early Career Contributions % Top box title
+]
+  \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em]
+    \item Commissioning the focal plane array of LSST-Camera, and testing and integrating multi-object and integral-field spectroscopic instruments.
+    \item Leading searches for electromagnetic counterparts to gravitational wave mergers using Vera C. Rubin Observatory, and other observing campaigns using both photometric and spectroscopic instruments.
+    \item Measuring $H_0$ using the dark siren method and the Dark Energy Legacy Volume Explorer galaxy catalog.
+  \end{itemize}
+
+  % Connects lower box section with a title bar
+  
+\end{tcolorbox}
+% \vspace{0.15cm}
+% This focus is rooted in by three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
+% These three pillars reflect the expertise I will bring to \Institute, where each research activity is not viewed as separate, but as three legs of one research program, strongest when pursued together. 
+\thispagestyle{plain}
+
+% \bigskip
 
 \input{contributions/past_instrumentation.tex}
 
@@ -190,13 +198,50 @@ My past work has been in direct support of the three pillars of my research prog
 
 \input{contributions/past_standard_sirens.tex}
 
+\begin{figure*}[t]
+    \centering
+    \begin{subfigure}[b]{0.325\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/placeholder.pdf}
+        \caption{Removal of the persistence effect, a dominant residual charge effect in LSSTCam sensors \cite{MacBride2026LSSTCam}.}
+        \label{fig:highlights:lsstcam}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[b]{0.325\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/20251114_obs.png}
+        \caption{The deepest wide area ToO search to date, for GW candidate S251112cm \cite{MacBride2026RubinToO}.}
+        \label{fig:highlights:s251112cm_search}
+    \end{subfigure}%
+    \hfill
+    \begin{subfigure}[b]{0.325\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/delve_result.png}
+        \caption{$H_0$ constraints using the Gravitational Wave Transient Catalogue-5.0 and the DELVE catalog \cite{MacBride2026DELVEH0}.}
+        \label{fig:highlights:delve_result}
+    \end{subfigure}
+    \caption{A summary of early career contributions, spanning instrumentation, multi-messenger astrophysics, and standard siren cosmology.}
+    \label{fig:highlights}
+\end{figure*}
 
-\statement{Future Research Activities} 
-At \Institute, I will build directly on my current work in instrumentation, multi-messenger astrophysics, and standard siren cosmology to 
+% \statement{Future Research Activities} 
+\begin{tcolorbox}[
+  colback=blue!5!white,      % Interior background color
+  colframe=blue!75!black,    % Outer border color
+  title=Future Research Activities % Top box title
+]
+  \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.2em]
+    \item Develop future astronomical instruments, focusing on multi-object spectroscopy, and deploy monitoring tools for LSST-Camera.
+    \item Lead Target-of-Opportunity searches using Vera C. Rubin Observatory to detect the next bright siren, and other exotic astrophysical events.
+    \item Usher dark siren cosmology into a precision era using LSST data and specialized observational programs.
+  \end{itemize}
+\end{tcolorbox}
+At \Institute, I will build directly on my research in instrumentation, multi-messenger astrophysics, and standard siren cosmology, to 
 develop instruments for next-generation astronomical surveys,
 maximize the data from \Rubin\ Observatory for bright siren measurements,
 transform \LSST\ into the standard dark siren galaxy catalog,
-and lead new observational programs for standard siren cosmology.
+and 
+lead new observational programs for standard siren cosmology.
 
 \input{contributions/future_instrumentation.tex}
 
@@ -204,17 +249,24 @@ and lead new observational programs for standard siren cosmology.
 
 \input{contributions/future_dark_sirens.tex}
 
-\input{contributions/future_new_programs.tex}
+% \begin{wrapfigure}{l}{0.45\textwidth} % 'r' for right, 'l' for left
+%     \centering
+%     \includegraphics[width=0.42\textwidth]{figures/placeholder.pdf}
+%     \caption{Unclear about this figure.}
+%     \label{fig:future_work}
+% \end{wrapfigure}
+% \input{contributions/future_new_programs.tex}
 
-\begin{wrapfigure}{lb}{0.45\textwidth} % 'r' for right, 'l' for left
-    \centering
-    \includegraphics[width=0.42\textwidth]{figures/placeholder.pdf}
-    \caption{Caption for wrapped image.}
-    \label{fig:future_work}
-\end{wrapfigure}
+% \begin{wrapfigure}{l}{0.45\textwidth} % 'r' for right, 'l' for left
+%     \centering
+%     \includegraphics[width=0.42\textwidth]{figures/placeholder.pdf}
+%     \caption{Unclear about this figure.}
+%     \label{fig:future_work}
+% \end{wrapfigure}
 
-These plans form one continuous arc, not separate agendas. The near-term focus on builds the operational standing and analysis pipelines within \Rubin, \LSST, and \LVK, and provides the basis for executing on the longer-term program. 
-That foundation will enable impactiful standard-siren measurements, a pioneering specialized survey for gravitational wave cosmology, combined-probe analyses in LSST-DESC, and instrumentation development to maximize the 2030's using both spectroscopic and photometric instruments.
+Working directly with \TODO{Specify specific people to work with} at \Institute\ will help to develop \TODO{Specify targeted project that works very well with}, along with contributing to the research goals and mission of \Institute\ by \TODO{Reference the specific mission of the research institute}. 
+Through this concerted effort, I will drive advancements in astronomical instrumentation, push the boundaries of multi-messenger astrophysics, and mature standard sirens, both bright and dark, into a precision probe in the \LSST\ era.
+
 \bigskip
 \statement{References}
 {\small A full publication list is available on \href{https://scholar.google.com/citations?user=XtRTswUAAAAJ}{Google Scholar} and \href{https://ui.adsabs.harvard.edu/search/q=((author%3A%22MacBride%2C%20S.%22)%20AND%20year%3A2017-2100)&sort=date%20desc%2C%20bibcode%20desc&ui_tag=results%2Fgraph%2Fyear&p_=0}{NASA ADS} (h-index \hindex\ as of \hindexDate).}
