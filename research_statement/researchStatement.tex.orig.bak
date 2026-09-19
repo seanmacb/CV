@@ -13,9 +13,6 @@
   headsep=3pt, % separation between header rule and text
 ]{geometry}
 \usepackage[most]{tcolorbox}
-\setlength{\floatsep}{3pt plus 1pt minus 1pt}
-\setlength{\textfloatsep}{4pt plus 1pt minus 1pt}
-\setlength{\intextsep}{3pt plus 1pt minus 1pt}
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{scholax}
@@ -177,7 +174,6 @@ In this research proposal, I will describe how my research experience and leader
 \begin{tcolorbox}[
   colback=blue!5!white,      % Interior background color
   colframe=blue!75!black,    % Outer border color
-  boxsep=0.4mm, top=0.4mm, bottom=0.4mm, left=2mm, right=2mm, toptitle=0.4mm, bottomtitle=0.4mm, before skip=1.5pt, after skip=1.5pt,
   title=Early Career Contributions % Top box title
 ]
   \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em]
@@ -201,21 +197,21 @@ In this research proposal, I will describe how my research experience and leader
     \centering
     \begin{subfigure}[t]{0.42\textwidth}
         \centering
-        \includegraphics[width=0.79\textwidth]{figures/testFig.png}
+        \includegraphics[width=\textwidth]{research_statement/figures/testFig.png}
         \caption{Removal of the persistence effect in \LSSTCam\ CCDs, a dominant, time-dependent, residual charge effect \cite{MacBride2026LSSTCam}.}
         \label{fig:highlights:lsstcam}
     \end{subfigure}%
     \hfill
     \begin{subfigure}[t]{0.28\textwidth}
         \centering
-        \includegraphics[width=0.79\textwidth]{figures/20251114_obs.png}
+        \includegraphics[width=\textwidth]{figures/20251114_obs.png}
         \caption{The deepest wide area ToO search to date, for GW candidate S251112cm \cite{MacBride2026RubinToO}.}
         \label{fig:highlights:s251112cm_search}
     \end{subfigure}%
     \hfill
     \begin{subfigure}[t]{0.28\textwidth}
         \centering
-        \includegraphics[width=0.79\textwidth]{figures/delve_result.png}
+        \includegraphics[width=\textwidth]{figures/delve_result.png}
         \caption{$H_0$ constraints using the Gravitational Wave Transient Catalogue-5.0 and the DELVE catalog \cite{MacBride2026DELVEH0}.}
         \label{fig:highlights:delve_result}
     \end{subfigure}
@@ -226,7 +222,6 @@ In this research proposal, I will describe how my research experience and leader
 \begin{tcolorbox}[
   colback=blue!5!white,      % Interior background color
   colframe=blue!75!black,    % Outer border color
-  boxsep=0.4mm, top=0.4mm, bottom=0.4mm, left=2mm, right=2mm, toptitle=0.4mm, bottomtitle=0.4mm, before skip=1.5pt, after skip=1.5pt,
   title=Future Research Activities % Top box title
 ]
   \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.2em]
