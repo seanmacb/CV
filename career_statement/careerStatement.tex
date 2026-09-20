@@ -1,0 +1,105 @@
+%% Stanford Science Fellows Program -- Career Statement
+%% Sean Patrick MacBride
+%%
+%% Program spec: up to 2 pages, minimum 11pt font, 3/4-inch margins.
+%% Compile with: pdflatex -> pdflatex (for \pageref{LastPage})
+%% Style deliberately matches researchStatement.tex / outreachStatement.tex
+%% so the application packet reads as one set.
+
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1}
+\usepackage[
+  letterpaper,
+  margin=0.75in,
+  headsep=3pt,
+]{geometry}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[inline]{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.2em, itemsep=-0.1cm}
+\usepackage{marginnote}
+\usepackage[
+  breaklinks,
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue,
+  pdftitle={Sean Patrick MacBride - Career Statement},
+  pdfauthor={Sean Patrick MacBride},
+  unicode
+]{hyperref}
+
+\newcommand{\TODO}[1]{%
+  \marginnote{\color{red}\textbf{TODO}}%
+  {\color{red}#1}%
+}
+
+%% ---------------------------------------------------------------
+%% Personal-info macros (kept in the same style as the other
+%% application documents so a single find/replace keeps them in sync)
+%% ---------------------------------------------------------------
+\newcommand{\yourname}{Sean Patrick MacBride}
+\newcommand{\youremail}{\href{mailto:sean.macbride@physik.uzh.ch}{sean.macbride@physik.uzh.ch}}
+\newcommand{\yourweb}{\href{https://seanmacb.github.io}{seanmacb.github.io}}
+\newcommand{\soptitle}{Career Statement}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\rmfamily
+  Web: \textcolor{blue}{\yourweb}\quad
+  \yourname\ -- Career Statement \quad
+  E-mail: \textcolor{blue}{\youremail}}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+%% Section-header macro (matches researchStatement.tex / outreachStatement.tex)
+\newcommand{\statement}[1]{\par\medskip
+  \textcolor{blue}{\textbf{#1}}%
+}
+
+\begin{document}
+\hrule
+\begin{center}
+    \Large\soptitle\ -- \yourname
+\end{center}
+\vspace{0pt}
+\hrule
+\vspace{0.5pt}
+\hrule height 0.5pt
+\vspace{3pt}
+\thispagestyle{plain}
+
+\normalsize
+\noindent
+My career so far has been an argument, made one project at a time, that building the instrument and doing the inference are the same job: I have spent my early career moving fluidly between a clean room and a likelihood function, and I want to spend the next stage of it proving that the same is true at the frontier of multi-messenger cosmology. The Stanford Science Fellows Program is the right next step for that argument. Its explicit mission to bridge disciplines and incubate new research directions matches the bridge I am already building between astronomical instrumentation and cosmological inference, and its host institutions -- including SLAC, where the LSST Camera I helped commission was itself built -- put me one building away from the community I already work with every day.
+
+\begin{tcolorbox}[
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  boxsep=0.4mm, top=0.4mm, bottom=0.4mm, left=2mm, right=2mm,
+  toptitle=0.4mm, bottomtitle=0.4mm, before skip=2.5pt, after skip=3.5pt,
+  title=Career Snapshot
+]
+  \begin{itemize}
+    \item PhD candidate in Physics, University of Zurich (2024--2027); thesis: \textit{Standard Siren Cosmology: From Instrumentation to Inference}.
+    \item Led LSST Camera focal-plane commissioning at Vera C. Rubin Observatory; now Rubin's Target-of-Opportunity Observer and LSSTCam Summit Support Scientist.
+    \item Produced a dark-siren $H_0$ measurement using the DELVE galaxy catalog and IGWN O4c data; co-chair, LSST-DESC Speakers Bureau; elected DESC Collaboration Council member.
+    \item Built and tested hardware for three spectrographs and one robotic focal-plane system (LLAMAS, DESI, PFS-adjacent follow-up) across four telescopes on three continents.
+    \item Organized four conferences and workshops; mentored six students, three now pursuing physics PhDs of their own.
+  \end{itemize}
+\end{tcolorbox}
+
+\statement{Career goals}
+My long-term goal is to lead an independent research group that treats instrumentation and cosmological inference as one continuous pipeline, and to hold a faculty position where I can train the next generation of scientists to do the same. Too often these are taught as separate skills -- the people who build detectors and the people who fit likelihoods rarely sit in the same room -- and I think the next decade of standard-siren cosmology, with Rubin Observatory, next-generation spectroscopic surveys, and space-based gravitational-wave detectors all coming online together, will reward whoever can move fluidly between them. My thesis is built on that premise: I commission and characterize the instruments that produce the data, then use that same data to measure the Hubble constant and other cosmological parameters. A Stanford Science Fellowship would let me pressure-test this approach in exactly the environment it needs to succeed: a Stanford and SLAC community where Rubin Observatory, LSST-DESC, and KIPAC's multi-messenger and cosmology groups already sit alongside the accelerator physicists, instrumentalists, and data scientists whose methods I want to keep learning from. Over three years, I intend to use the fellowship to establish my own dark- and bright-siren measurement program using early LSST data, to extend the focal-plane and spectroscopic instrumentation work that has defined my career so far toward the next generation of surveys, and to build the independent research identity that a faculty search committee will recognize as more than an extension of my PhD advisor's program.
+
+\statement{Relevant experience}
+My research career has deliberately alternated between hardware and analysis so that I would be credible at both. I assembled and tested the opto-mechanical systems and 2,400 fibers of the LLAMAS spectrograph, which achieved first light on the Magellan Baade telescope in 2024; characterized and resolved a common failure mode in DESI's robotic fiber positioners; and led the in-laboratory and on-telescope commissioning of the LSST Camera's focal plane at Rubin Observatory, including developing the tool used to monitor focal-plane defect stability. On the inference side, I lead the Rubin Observatory Target-of-Opportunity program during early LSST operations, coordinate time-critical follow-up with the International Gravitational-Wave Network, and produced a dark-siren $H_0$ measurement using the DELVE galaxy catalog and IGWN O4c data -- work that is now extending toward the first dark-siren measurement made with LSST data itself. I hold community leadership roles that required me to communicate this work to audiences beyond my own subfield: I am co-chair of the LSST-DESC Speakers Bureau, an elected DESC Collaboration Council member, and I organized four conferences and workshops, including a special session at the 2025 European Astronomical Society meeting and the 2024 Conference for Undergraduate Women in Physics. I have also been a lead instructor for large introductory physics courses at the University of Michigan and the University of Zurich, mentored six undergraduate and master's students (three now in physics PhD programs of their own), and served on my department's DEI committee -- experience I read as directly relevant to a program that explicitly prioritizes mentorship and support for scholars from underrepresented groups.
+
+\statement{Contributions to the Stanford Science Fellows community}
+I would bring three things to this program beyond my own research. First, a working example of the instrumentation-to-inference bridge the program's interdisciplinary mission is built around: I can speak fluently to hardware engineers about focal-plane defects and to statisticians about likelihood systematics, which makes me a natural connector for fellows in adjacent physical and mathematical sciences who are trying to do the same across their own disciplinary lines. Second, a track record of translating technical work for people outside it, built from leading DESC's Speakers Bureau, briefing NSF and DOE review panels and government delegations on the LSST Camera at Rubin Observatory, and running public astronomy events for general audiences -- exactly the kind of science-communication skill the program asks its fellows to develop further. Third, a sustained mentorship practice: six students guided through their first research projects since 2023, service on a departmental DEI committee, and organizing experience for events explicitly aimed at broadening participation in physics, all of which I would extend into the fellowship's community-building activities. Because SLAC hosts the LSST Camera I helped commission and coordinates LSST-DESC, the collaboration I already hold leadership roles in, I would arrive already connected to the Rubin, KIPAC, and SLAC community this program draws on -- not to import an existing project unchanged, but to use that head start to move faster into new, genuinely interdisciplinary territory than I could starting cold.
+
+I am applying to the Stanford Science Fellows Program because I want my early independence as a scientist to be built in a place designed to reward exactly the kind of work I already do: treating instrumentation and inference, and research and communication, as inseparable parts of the same job.
+
+\end{document}
