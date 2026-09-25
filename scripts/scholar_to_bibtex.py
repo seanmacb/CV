@@ -129,6 +129,14 @@ def matching_skip_pattern(title: str, venue: str, patterns: list):
 def fetch_bibtex_entries(scholar_id: str, delay: float = 1.5, max_authors: int = None, my_name: str = None,
                           skip_patterns: list = None):
     """Fetch every publication for the given scholar ID and yield BibTeX strings one at a time."""
+    # scholarly's default is 5 retries, and each retry on a 403/CAPTCHA response
+    # backs off for 60-120s -- then it repeats the *whole* retry cycle a second
+    # time with a "premium" session. Once Google Scholar starts blocking a long
+    # run (which tends to happen only after a lot of requests have already gone
+    # out, i.e. late in a long publication list), a single blocked entry can look
+    # like a silent hang for 20-30 minutes before scholarly finally gives up on
+    # it. Trading retry patience for a faster, more visible failure here.
+    scholarly.set_retries(2)
     print(f"Looking up author profile: {scholar_id}")
     author = scholarly.search_author_id(scholar_id)
     author = scholarly.fill(author, sections=["publications"])
@@ -204,13 +212,23 @@ def main():
     scholar_id = extract_scholar_id(args.profile)
     skip_patterns = load_skip_patterns(args.skip_file, args.skip)
 
-    entries = list(fetch_bibtex_entries(scholar_id, delay=args.delay, max_authors=args.max_authors,
-                                         my_name=args.my_name, skip_patterns=skip_patterns))
-
+    # Write each entry to disk as it arrives, instead of buffering everything in
+    # memory and writing once at the end -- a long profile can take a very long
+    # time to fetch, and Google Scholar rate-limiting tends to bite hardest near
+    # the end of a long run (once a lot of requests have already gone out). If
+    # that happens and the run is killed or interrupted, this keeps whatever was
+    # already fetched instead of losing the entire run's progress.
+    count = 0
     with open(args.output, "w", encoding="utf-8") as f:
-        f.write("\n\n".join(entries))
+        for bibtex in fetch_bibtex_entries(scholar_id, delay=args.delay, max_authors=args.max_authors,
+                                            my_name=args.my_name, skip_patterns=skip_patterns):
+            if count:
+                f.write("\n\n")
+            f.write(bibtex)
+            f.flush()
+            count += 1
 
-    print(f"\nDone. Wrote {len(entries)} BibTeX entries to {args.output}")
+    print(f"\nDone. Wrote {count} BibTeX entries to {args.output}")
 
 
 if __name__ == "__main__":
