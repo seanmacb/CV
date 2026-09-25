@@ -1,42 +1,26 @@
-% publications.tex
-%
-% Renders every entry in scholar_export.bib as a numbered publication list.
-% Compile with:
-%     pdflatex publications.tex
-%     bibtex publications
-%     pdflatex publications.tex
-%     pdflatex publications.tex
-%
-% (Two pdflatex passes after bibtex are needed to resolve the numbering.)
-
 \documentclass[11pt]{article}
-
+\usepackage[
+  backend=biber,
+  style=phys,
+]{biblatex}
 \usepackage[margin=1in]{geometry}
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
-\usepackage{natbib}
 
 \title{Publications}
-\author{}
+\author{Sean Patrick MacBride}
 \date{}
 
-% Name of the .bib file produced by scholar_to_bibtex.py, without the
-% .bib extension. Change this if you rename the file or move it elsewhere.
-\newcommand{\bibfilename}{pubs_all}
+% Specify the filename including the .bib extension
+\newcommand{\bibfilename}{pubs/scholar_export.bib}
 
-% Bibliography style. Common choices:
-%   unsrt   -- numbered, in the order entries appear in the .bib file
-%   plain   -- numbered, sorted alphabetically by author
-%   abbrv   -- like plain, with abbreviated first names
-\bibliographystyle{unsrt}
+% Load the bib resource (uncommented and formatted for biblatex)
+\addbibresource{\bibfilename}
 
 \begin{document}
 
 \maketitle
 
-% \nocite{*} tells LaTeX to include every entry in the .bib file,
-% even though none are explicitly \cite{}'d in the body text.
 \nocite{*}
-
-\bibliography{\bibfilename}
+\printbibliography
 
 \end{document}
