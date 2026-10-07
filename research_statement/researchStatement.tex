@@ -20,6 +20,8 @@
 \usepackage{fancyhdr}
 \usepackage{scholax}
 \usepackage{lastpage}
+\usepackage{lineno}
+% \linenumbers
 \usepackage[inline]{enumitem}
 \usepackage{caption}
 \usepackage{wrapfig}
@@ -32,13 +34,11 @@
 \usepackage{caption}
 \usepackage{enumitem}
 \setlist[itemize]{noitemsep}
-
+\newcommand{\tcolor}{black}
 \DeclareCaptionFont{customsizefig}{\fontsize{10pt}{10pt}\selectfont}
 \DeclareCaptionFont{customsizesubfig}{\fontsize{9pt}{9pt}\selectfont}
-\captionsetup[figure]{font=customsizefig}
-\captionsetup[subfigure]{font=customsizesubfig}
-\captionsetup[subfigure]{aboveskip=0pt, belowskip=0pt}
-\captionsetup[figure]{aboveskip=0pt, belowskip=0pt}
+\captionsetup[figure]{font=customsizefig,aboveskip=1.5pt, belowskip=1.5pt}
+\captionsetup[subfigure]{font=customsizesubfig,aboveskip=1.5pt, belowskip=1.5pt}
 \newcommand{\TODO}[1]{%
   \marginnote{\color{red}\textbf{TODO}}% Put 'TODO' in margin
   {\color{red}#1}% Put the associated text in red in the body
@@ -57,7 +57,7 @@
 \fancyhead[C]{%
   \footnotesize\rmfamily
   Web: \textcolor{blue}{\yourweb}\quad
-  \yourname\ -- Research Statement \quad
+  \yourname\ \quad
   E-mail: \textcolor{blue}{\youremail}}
 \fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
 
@@ -149,8 +149,8 @@
 \newcommand{\Blanco}{V\'ictor M. Blanco 4-meter Telescope}
 \newcommand{\IceCube}{IceCube Neutrino Observatory}
 
-\newcommand{\Institute}{\TODO{Add Institution}}
-\newcommand{\Position}{\TODO{Add Position}}
+\newcommand{\Institute}{\textcolor{\tcolor}{Fermilab National Accelerator Laboratory}}
+\newcommand{\Position}{\textcolor{\tcolor}{Lederman Fellow}}
 
 \usepackage[
   breaklinks,
@@ -172,23 +172,32 @@
 
 \normalsize
 \noindent My research focuses on exploring the cosmic frontier using astronomical instrumentation, multi-messenger astrophysics, and standard siren cosmology.
-In this research proposal, I will describe how my research experience and leadership has prepared me for a \Position\ at \Institute.
+In this proposal, I will describe how my past research experience and leadership has comprehensively prepared me to continue exploring the frontier as a \Position\ at \Institute.
 % \hrule
-\begin{tcolorbox}[
-  colback=blue!5!white,      % Interior background color
-  colframe=blue!75!black,    % Outer border color
-  boxsep=0.4mm, top=0.4mm, bottom=0.4mm, left=2mm, right=2mm, toptitle=0.4mm, bottomtitle=0.4mm, before skip=2.5pt, after skip=3.5pt,
-  title=Early Career Contributions % Top box title
-]
-  \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em]
-    \item Commissioning the focal plane array of LSST-Camera, testing and integrating multi-object and integral-field spectroscopic instruments.
-    \item Leading searches for electromagnetic counterparts to gravitational wave mergers using Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph.
-    \item Measuring $H_0$ using the dark siren method and the Dark Energy Legacy Volume Explorer galaxy catalog.
-  \end{itemize}
+% \begin{tcolorbox}[
+%   colback=blue!5!white,      % Interior background color
+%   colframe=blue!75!black,    % Outer border color
+%   boxsep=0.4mm, top=0.4mm, bottom=0.4mm, left=2mm, right=2mm, toptitle=0.4mm, bottomtitle=0.4mm, before skip=2.5pt, after skip=3.5pt,
+%   title=Early Career Contributions % Top box title
+% ]
+%   \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1em]
+%     \item Commissioning the focal plane array of LSST-Camera, testing and integrating multi-object and integral-field spectroscopic instruments.
+%     \item Leading searches for electromagnetic counterparts to gravitational wave mergers using Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph.
+%     \item Measuring $H_0$ using the dark siren method and the Dark Energy Legacy Volume Explorer galaxy catalog.
+%   \end{itemize}
 
-  % Connects lower box section with a title bar
+%   % Connects lower box section with a title bar
   
-\end{tcolorbox}
+% \end{tcolorbox}
+
+\statement{Early Career Contributions}
+My previous research has focused on instrumentation development for ground based optical telescopes, target-of-opportunity searches for electromagnetic counterparts of gravitational wave events, and constraining dark energy using electromagnetic and gravitational wave data.
+% . First, I commissioned the focal plane array of the LSST Camera and led testing and integration of multi-object and integral-field spectroscopic instruments, building a foundation in the hardware underlying modern survey astronomy. Second, I led searches for electromagnetic counterparts to gravitational-wave mergers using the Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph. Third, I measured the Hubble constant using the dark siren method, combining gravitational-wave data with the Dark Energy Legacy Volume Explorer galaxy catalog. Together, these contributions trace a path from instrumentation to multi-messenger discovery to cosmological inference.
+% My early career contributions are rooted in three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
+% Commissioning the focal plane array of LSST-Camera, testing and integrating multi-object and integral-field spectroscopic instruments.
+% Leading searches for electromagnetic counterparts to gravitational wave mergers using Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph.
+% Measuring $H_0$ using the dark siren method and the Dark Energy Legacy Volume Explorer galaxy catalog.
+
 % \vspace{0.15cm}
 % This focus is rooted in by three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
 % These three pillars reflect the expertise I will bring to \Institute, where each research activity is not viewed as separate, but as three legs of one research program, strongest when pursued together. 
@@ -225,18 +234,30 @@ In this research proposal, I will describe how my research experience and leader
     \label{fig:highlights}
 \end{figure*}
 % \statement{Future Research Activities} 
-\begin{tcolorbox}[
-  colback=blue!5!white,      % Interior background color
-  colframe=blue!75!black,    % Outer border color
-  boxsep=0.4mm, top=0.4mm, bottom=1mm, left=2mm, right=2mm, toptitle=0.4mm, bottomtitle=0.4mm, before skip=2.5pt, after skip=3.5pt,
-  title=Future Research Activities % Top box title
-]
-  \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.2em]
-    \item Develop future astronomical instruments, focusing on a complement to \Rubin, and deploy monitoring tools for LSST-Camera.
-    \item Lead Target-of-Opportunity searches using Vera C. Rubin Observatory to detect the next bright siren, and other exotic astrophysical events.
-    \item Usher dark siren cosmology into a precision era using LSST data and specialized observational programs.
-  \end{itemize}
-\end{tcolorbox}
+% \begin{tcolorbox}[
+%   colback=blue!5!white,      % Interior background color
+%   colframe=blue!75!black,    % Outer border color
+%   boxsep=0.4mm, top=0.4mm, bottom=1mm, left=2mm, right=2mm, toptitle=0.4mm, bottomtitle=0.4mm, before skip=2.5pt, after skip=3.5pt,
+%   title=Future Research Activities % Top box title
+% ]
+%   \begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.2em]
+%     \item Develop future astronomical instruments, focusing on a complement to \Rubin, and deploy monitoring tools for LSST-Camera.
+%     \item Lead Target-of-Opportunity searches using Vera C. Rubin Observatory to detect the next bright siren, and other exotic astrophysical events.
+%     \item Usher dark siren cosmology into a precision era using LSST data and specialized observational programs.
+%   \end{itemize}
+% \end{tcolorbox}
+\statement{Future Research Activities}
+My proposed research builds on this foundation through complementary directions. 
+First, 
+I will characterize image sensors for future cosmic surveys, 
+% I will develop future astronomical instruments designed to complement Vera C. Rubin Observatory, 
+while also deploying monitoring tools for the LSST Camera to improve LSST data quality. 
+Second, I will lead Target-of-Opportunity searches to detect the next bright siren and other exotic astrophysical events. 
+Third, I will usher standard siren cosmology into a precision era, leveraging LSST data alongside specialized observational programs for bright and dark siren cosmology. %Together, these directions extend the arc from instrumentation, through discovery, to precision cosmological measurement.
+% Develop future astronomical instruments, focusing on a complement to \Rubin, and deploy monitoring tools for LSST-Camera.
+% Lead Target-of-Opportunity searches using Vera C. Rubin Observatory to detect the next bright siren, and other exotic astrophysical events.
+% Usher dark siren cosmology into a precision era using LSST data and specialized observational programs.
+
 % At \Institute, I will build upon on my research in instrumentation, multi-messenger astrophysics, and standard siren cosmology, to 
 % develop instruments for next-generation astronomical surveys,
 % maximize the data from \Rubin\ Observatory for bright siren measurements,
@@ -265,14 +286,16 @@ In this research proposal, I will describe how my research experience and leader
 %     \label{fig:future_work}
 % \end{wrapfigure}
 
-Working directly with \TODO{Specify specific people to work with} at \Institute\ will help to develop \TODO{Specify targeted project that works very well with}, along with contributing to the research goals and mission of \Institute\ by \TODO{Reference the specific mission of the research institute}. 
-Through this concerted effort, I will drive advancements in astronomical instrumentation, push the boundaries of multi-messenger astrophysics, and mature standard sirens, both bright and dark, into a precision probe in the \LSST\ era.
+As a \Position, I will achieve these research goals by collaborating with \textcolor{\tcolor}{Juan Estrada and Alex Drlica-Wagner} to \textcolor{\tcolor}{effectively characterize image sensors for future spectroscopic surveys}, in addition to working with \textcolor{\tcolor}{Ken Herner} to \textcolor{\tcolor}{search for the next electromagnetic counterpart of a gravitational wave event using \Rubin\ Observatory}.
+% contributing to the research goals and mission of \Institute\ by \TODO{Reference the specific mission of the research institute}. 
+Through this concerted effort, I will propel advancements in astronomical instrumentation, push the boundaries of multi-messenger astrophysics, and mature standard sirens, both bright and dark, into a precision cosmological probe.
 
-\bigskip
-\statement{References}
-{\small A full publication list is available on \href{https://scholar.google.com/citations?user=XtRTswUAAAAJ}{Google Scholar} and \href{https://ui.adsabs.harvard.edu/search/q=((author%3A%22MacBride%2C%20S.%22)%20AND%20year%3A2017-2100)&sort=date%20desc%2C%20bibcode%20desc&ui_tag=results%2Fgraph%2Fyear&p_=0}{NASA ADS} (h-index \hindex\ as of \hindexDate).}
+\newpage
+
+\textbf{References}
+% {\small A full publication list is available on \href{https://scholar.google.com/citations?user=XtRTswUAAAAJ}{Google Scholar} and \href{https://ui.adsabs.harvard.edu/search/q=((author%3A%22MacBride%2C%20S.%22)%20AND%20year%3A2017-2100)&sort=date%20desc%2C%20bibcode%20desc&ui_tag=results%2Fgraph%2Fyear&p_=0}{NASA ADS} (h-index \hindex\ as of \hindexDate).}
 \renewcommand{\refname}{}
-\vspace{-2\baselineskip}
+\vspace{-3\baselineskip}
 {\small\bibliography{references}}
 
 \end{document}
