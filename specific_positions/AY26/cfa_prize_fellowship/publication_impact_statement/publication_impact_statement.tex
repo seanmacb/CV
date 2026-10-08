@@ -1,0 +1,184 @@
+%% Postdoctoral Research Statement
+%% Adapted from the SOP template at
+%% http://tex.stackexchange.com/questions/150900/latex-coding-for-statement-of-purpose
+%%
+%% Compile with:  pdflatex -> bibtex -> pdflatex -> pdflatex
+%% Requires references.bib alongside this file.
+
+\documentclass[12pt]{article}
+\renewcommand{\baselinestretch}{1} 
+\usepackage[
+  a4paper,
+  margin=1in,
+  headsep=3pt, % separation between header rule and text
+]{geometry}
+\usepackage[most]{tcolorbox}
+\setlength{\floatsep}{3pt plus 1pt minus 1pt}
+\setlength{\textfloatsep}{3pt plus 1pt minus 1pt}
+\setlength{\intextsep}{3pt plus 1pt minus 1pt}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{scholax}
+\usepackage{lastpage}
+\usepackage{lineno}
+% \linenumbers
+\usepackage[inline]{enumitem}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{marginnote}
+\usepackage{caption}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+\newcommand{\tcolor}{red}
+\DeclareCaptionFont{customsizefig}{\fontsize{10pt}{10pt}\selectfont}
+\DeclareCaptionFont{customsizesubfig}{\fontsize{9pt}{9pt}\selectfont}
+\captionsetup[figure]{font=customsizefig,aboveskip=1.5pt, belowskip=1.5pt}
+\captionsetup[subfigure]{font=customsizesubfig,aboveskip=1.5pt, belowskip=1.5pt}
+\newcommand{\TODO}[1]{%
+  \marginnote{\color{red}\textbf{TODO}}% Put 'TODO' in margin
+  {\color{red}#1}% Put the associated text in red in the body
+}
+\setlist[itemize]{itemsep=-0.1cm, topsep=0pt, leftmargin=1.2em}
+%% ---------------------------------------------------------------
+%% Bibliography: natbib + BibTeX, author-year style.  Cite in-line
+%% with \citep{key} (parenthetical) or \citet{key} (textual).
+%% ---------------------------------------------------------------
+\usepackage[round,authoryear]{natbib}
+\bibliographystyle{ieeetr}
+\setlength{\bibsep}{2pt plus 0.3ex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\rmfamily
+  Web: \textcolor{blue}{\yourweb}\quad
+  \yourname\ \quad
+  E-mail: \textcolor{blue}{\youremail}}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+%% ---------------------------------------------------------------
+%% Personal-info macros: edit these once, they propagate everywhere.
+%% ---------------------------------------------------------------
+\newcommand{\yourname}{Sean Patrick MacBride}
+\newcommand{\youremail}{\href{mailto:sean.macbride@physik.uzh.ch}{sean.macbride@physik.uzh.ch}}
+\newcommand{\yourweb}{\href{https://seanmacb.github.io}{seanmacb.github.io}}
+
+\newcommand{\hindex}{8}
+\newcommand{\hindexDate}{August 2026}
+
+\newcommand{\soptitle}{Publication Impact Statement}
+
+%% Section-header macro (kept from the original SOP template)
+\newcommand{\statement}[1]{\par\medskip
+  \textcolor{blue}{\textbf{#1:}}%\hspace{0.05cm}
+}
+
+%% Highlight macro for spots the author should tailor per application
+%% (e.g. naming the specific host group, fellowship, or institution).
+\newcommand{\fillin}[1]{\textcolor{orange}{\textbf{[#1]}}}
+
+%% ---------------------------------------------------------------
+%% Recurring survey / collaboration / instrument acronyms.
+%%
+%% These are now managed by the `acro' package: each is declared once
+%% with a long and a short form, and \ac{...} automatically prints
+%% "Long Form (SHORT)" on first use and "SHORT" every time after.
+%% The user-facing macros (\LSST, \DESC, ...) are kept unchanged so
+%% the body text below did not have to be rewritten.
+%% ---------------------------------------------------------------
+\usepackage{acro}
+\acsetup{make-links=false}
+
+\DeclareAcronym{lsst}    {short = LSST,    long = Legacy Survey of Space and Time}
+\DeclareAcronym{lsstcam} {short = LSSTCam, long = \textbf{LSST Camera}}
+\DeclareAcronym{gw} {short = GW, long = gravitational wave}
+\DeclareAcronym{em} {short = EM, long = electromagnetic}
+\DeclareAcronym{desc}    {short = DESC,    long = LSST-Dark Energy Science Collaboration}
+\DeclareAcronym{des}     {short = DES,     long = Dark Energy Survey}
+\DeclareAcronym{desi}    {short = DESI,    long = \textbf{Dark Energy Spectroscopic Instrument}}
+\DeclareAcronym{desgw}   {short = DESGW,   long = Dark Energy Survey Gravitational Wave follow-up program}
+\DeclareAcronym{delve}   {short = DELVE,   long = Dark Energy Local Volume Exploration}
+\DeclareAcronym{pfs}     {short = PFS,     long = \textbf{Prime Focus Spectrograph}}
+\DeclareAcronym{llamas}  {short = LLAMAS,  long = \textbf{Large Lenslet Array Magellan Spectrograph}}
+\DeclareAcronym{lvk}     {short = LVK,     long = LIGO-Virgo-Kagra}
+\DeclareAcronym{too}     {short = ToO,     long = Target-of-Opportunity}
+\DeclareAcronym{decam}   {short = DECam,   long = \textbf{Dark Energy Camera}}
+\DeclareAcronym{rubin}   {short = Rubin,   long = Vera C. Rubin Observatory}
+\DeclareAcronym{must}   {short = MUST,   long = MUltiplexed Survey Telescope}
+\DeclareAcronym{3G}   {short = 3G,   long = third generation}
+\DeclareAcronym{specsfive}   {short = Spec-S5,   long = \textbf{Stage-5 Spectroscopic Experiment}}
+\DeclareAcronym{LISA}   {short = LISA,   long = Laser Interferometer Space Antenna}
+\DeclareAcronym{hyperk}   {short = Hyper-K,   long = Hyper Kamiokande}
+\DeclareAcronym{DUNE}   {short = DUNE,   long = Deep Underground Neutrino Experiment}
+\DeclareAcronym{jgem}    {short = J-GEM,
+                          long  = Japanese collaboration for gravitational-wave electromagnetic follow-up}
+\DeclareAcronym{UNIONS}   {short = UNIONS,   long = The Ultraviolet Near-infrared Optical Northern Survey} 
+
+\newcommand{\LSST}{\ac{lsst}}
+\newcommand{\EM}{\ac{em}}
+\newcommand{\threeG}{\ac{3G}}
+\newcommand{\UNIONS}{\ac{UNIONS}}
+\newcommand{\LSSTCam}{\ac{lsstcam}}
+\newcommand{\DESC}{\ac{desc}}
+\newcommand{\DES}{\ac{des}}
+\newcommand{\DESI}{\ac{desi}}
+\newcommand{\DESGW}{\ac{desgw}}
+\newcommand{\DELVE}{\ac{delve}}
+\newcommand{\PFS}{\ac{pfs}}
+\newcommand{\LLAMAS}{\ac{llamas}}
+\newcommand{\LVK}{\ac{lvk}}
+\newcommand{\ToO}{\ac{too}}
+\newcommand{\DECam}{\ac{decam}}
+\newcommand{\JGEM}{\ac{jgem}}
+\newcommand{\GW}{\ac{gw}}
+\newcommand{\must}{\ac{must}}
+
+\newcommand{\specsfive}{\ac{specsfive}}
+\newcommand{\LISA}{\ac{LISA}}
+\newcommand{\hyperk}{\ac{hyperk}}
+\newcommand{\DUNE}{\ac{DUNE}}
+
+%% Non-acronym text macros (unchanged: these are names, not abbreviations)
+\newcommand{\Rubin}{\ac{rubin}}
+\newcommand{\Ho}{\ensuremath{H_0}}
+\newcommand{\Blanco}{V\'ictor M. Blanco 4-meter Telescope}
+\newcommand{\IceCube}{IceCube Neutrino Observatory}
+
+\newcommand{\Institute}{\textcolor{\tcolor}{Fermilab National Accelerator Laboratory}}
+\newcommand{\Position}{\textcolor{\tcolor}{Lederman Fellow}}
+
+\usepackage[
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+\begin{document}
+\hrule
+\begin{center}
+    \Large\soptitle\ -- \yourname
+\end{center}
+\vspace{0pt}
+\hrule
+\vspace{0.5pt}
+\hrule height 0.5pt
+\vspace{3pt}
+
+\normalsize
+\noindent
+
+I call your attention to three publications that demonstrate the technical and analytic expertise from my PhD in astronomical instrumentation development, \ToO\ searches, and standard siren cosmology.
+
+\textbf{The LSSTCam proceeding}
+
+\textbf{The joint analysis with J-GEM}
+
+\textbf{The DELVE result}
+
+\end{document}
