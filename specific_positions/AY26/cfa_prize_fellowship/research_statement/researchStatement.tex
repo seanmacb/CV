@@ -102,7 +102,7 @@
 \DeclareAcronym{des}     {short = DES,     long = Dark Energy Survey}
 \DeclareAcronym{desi}    {short = DESI,    long = \textbf{Dark Energy Spectroscopic Instrument}}
 \DeclareAcronym{desgw}   {short = DESGW,   long = Dark Energy Survey Gravitational Wave follow-up program}
-\DeclareAcronym{delve}   {short = DELVE,   long = Dark Energy Local Volume Exploration}
+\DeclareAcronym{delve}   {short = DELVE,   long = DECam Local Volume Exploration}
 \DeclareAcronym{pfs}     {short = PFS,     long = \textbf{Prime Focus Spectrograph}}
 \DeclareAcronym{llamas}  {short = LLAMAS,  long = \textbf{Large Lenslet Array Magellan Spectrograph}}
 \DeclareAcronym{lvk}     {short = LVK,     long = LIGO-Virgo-Kagra}
@@ -149,8 +149,8 @@
 \newcommand{\Blanco}{V\'ictor M. Blanco 4-meter Telescope}
 \newcommand{\IceCube}{IceCube Neutrino Observatory}
 
-\newcommand{\Institute}{\textcolor{\tcolor}{Fermilab National Accelerator Laboratory}}
-\newcommand{\Position}{\textcolor{\tcolor}{Lederman Fellow}}
+\newcommand{\Institute}{\textcolor{\tcolor}{ the Center for Astrophysics}}
+\newcommand{\Position}{\textcolor{\tcolor}{Postdoctoral Fellow}}
 
 \usepackage[
   breaklinks,
@@ -190,6 +190,22 @@ In this proposal, I will describe how my past research experience and leadership
   
 % \end{tcolorbox}
 
+
+\statement{Early Career Contributions}
+My previous research has focused on instrumentation development for ground based optical telescopes, target-of-opportunity searches for electromagnetic counterparts of gravitational wave events, and constraining dark energy using electromagnetic and gravitational wave data.
+% . First, I commissioned the focal plane array of the LSST Camera and led testing and integration of multi-object and integral-field spectroscopic instruments, building a foundation in the hardware underlying modern survey astronomy. Second, I led searches for electromagnetic counterparts to gravitational-wave mergers using the Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph. Third, I measured the Hubble constant using the dark siren method, combining gravitational-wave data with the Dark Energy Legacy Volume Explorer galaxy catalog. Together, these contributions trace a path from instrumentation to multi-messenger discovery to cosmological inference.
+% My early career contributions are rooted in three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
+% Commissioning the focal plane array of LSST-Camera, testing and integrating multi-object and integral-field spectroscopic instruments.
+% Leading searches for electromagnetic counterparts to gravitational wave mergers using Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph.
+% Measuring $H_0$ using the dark siren method and the Dark Energy Legacy Volume Explorer galaxy catalog.
+
+% \vspace{0.15cm}
+% This focus is rooted in by three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
+% These three pillars reflect the expertise I will bring to \Institute, where each research activity is not viewed as separate, but as three legs of one research program, strongest when pursued together. 
+\thispagestyle{plain}
+% \bigskip
+\input{contributions/past_instrumentation.tex}
+
 \begin{figure*}[b]
     \centering
     \begin{subfigure}[t]{0.42\textwidth}
@@ -208,28 +224,13 @@ In this proposal, I will describe how my past research experience and leadership
     \hfill
     \begin{subfigure}[t]{0.28\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{figures/delve_result.png}
+        \includegraphics[width=0.9\textwidth]{research_statement/figures/delve_result.png}
         \caption{Constraints on $H_0$ using the fifth Gravitational Wave Transient Catalogue and the DELVE catalog \cite{MacBride2026DELVEH0}.}
         \label{fig:highlights:delve_result}
     \end{subfigure}
     \caption{A summary of early career contributions, spanning instrumentation, multi-messenger astrophysics, and standard siren cosmology.}
     \label{fig:highlights}
 \end{figure*}
-
-\statement{Early Career Contributions}
-My previous research has focused on instrumentation development for ground based optical telescopes, target-of-opportunity searches for electromagnetic counterparts of gravitational wave events, and constraining dark energy using electromagnetic and gravitational wave data.
-% . First, I commissioned the focal plane array of the LSST Camera and led testing and integration of multi-object and integral-field spectroscopic instruments, building a foundation in the hardware underlying modern survey astronomy. Second, I led searches for electromagnetic counterparts to gravitational-wave mergers using the Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph. Third, I measured the Hubble constant using the dark siren method, combining gravitational-wave data with the Dark Energy Legacy Volume Explorer galaxy catalog. Together, these contributions trace a path from instrumentation to multi-messenger discovery to cosmological inference.
-% My early career contributions are rooted in three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
-% Commissioning the focal plane array of LSST-Camera, testing and integrating multi-object and integral-field spectroscopic instruments.
-% Leading searches for electromagnetic counterparts to gravitational wave mergers using Vera C. Rubin Observatory, the Dark Energy Camera, and the Prime Focus Spectrograph.
-% Measuring $H_0$ using the dark siren method and the Dark Energy Legacy Volume Explorer galaxy catalog.
-
-% \vspace{0.15cm}
-% This focus is rooted in by three distinct pillars: building cutting-edge astronomical instrumentation, leading observing campaigns to search for the electromagnetic counterparts to gravitational-wave mergers, and performing inference on electromagnetic and gravitational-wave data to achieve robust cosmological constraints.
-% These three pillars reflect the expertise I will bring to \Institute, where each research activity is not viewed as separate, but as three legs of one research program, strongest when pursued together. 
-\thispagestyle{plain}
-% \bigskip
-\input{contributions/past_instrumentation.tex}
 
 \input{contributions/past_too_searches.tex}
 
@@ -250,8 +251,8 @@ My previous research has focused on instrumentation development for ground based
 \statement{Future Research Activities}
 My proposed research builds on this foundation through complementary directions. 
 First, 
-I will characterize image sensors for future cosmic surveys, 
-% I will develop future astronomical instruments designed to complement Vera C. Rubin Observatory, 
+% I will characterize image sensors for future cosmic surveys, 
+I will support the commissioning and design of future astronomical instruments designed to complement Vera C. Rubin Observatory, 
 while also deploying monitoring tools for the LSST Camera to improve LSST data quality. 
 Second, I will lead Target-of-Opportunity searches to detect the next bright siren and other exotic astrophysical events. 
 Third, I will usher standard siren cosmology into a precision era, leveraging LSST data alongside specialized observational programs for bright and dark siren cosmology. %Together, these directions extend the arc from instrumentation, through discovery, to precision cosmological measurement.
@@ -287,7 +288,14 @@ Third, I will usher standard siren cosmology into a precision era, leveraging LS
 %     \label{fig:future_work}
 % \end{wrapfigure}
 
-As a \Position, I will achieve these research goals by collaborating with \textcolor{\tcolor}{Juan Estrada and Alex Drlica-Wagner} to \textcolor{\tcolor}{effectively characterize image sensors for future spectroscopic surveys}, in addition to working with \textcolor{\tcolor}{Ken Herner} to \textcolor{\tcolor}{search for the next electromagnetic counterpart of a gravitational wave event using \Rubin\ Observatory}.
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{specific_positions/AY26/cfa_prize_fellowship/research_statement/figures/proposal_gantt.pdf}
+    \caption{Proposed research timeline, 2027--2030, across three themes: instrumentation, bright sirens and ToO, and dark sirens and cosmology. Solid bars mark development and analysis efforts; shaded bars mark ongoing operations support.}
+    \label{fig:Gantt}
+\end{figure}
+
+As a \Position\ at \Institute, I will achieve these research goals by collaborating with \textcolor{\tcolor}{other postdoctoral scientists, including Danielle Frostig} to \textcolor{\tcolor}{support commissioning and operations of the VIA spectrograph}, in addition to working with \textcolor{\tcolor}{the research group of Ashley Villar} to \textcolor{\tcolor}{search for the next electromagnetic counterpart of a gravitational wave event using \Rubin\ Observatory and other spectroscopic facilities}.
 % contributing to the research goals and mission of \Institute\ by \TODO{Reference the specific mission of the research institute}. 
 Through this concerted effort, I will propel advancements in astronomical instrumentation, push the boundaries of multi-messenger astrophysics, and mature standard sirens, both bright and dark, into a precision cosmological probe.
 
@@ -297,6 +305,6 @@ Through this concerted effort, I will propel advancements in astronomical instru
 % {\small A full publication list is available on \href{https://scholar.google.com/citations?user=XtRTswUAAAAJ}{Google Scholar} and \href{https://ui.adsabs.harvard.edu/search/q=((author%3A%22MacBride%2C%20S.%22)%20AND%20year%3A2017-2100)&sort=date%20desc%2C%20bibcode%20desc&ui_tag=results%2Fgraph%2Fyear&p_=0}{NASA ADS} (h-index \hindex\ as of \hindexDate).}
 \renewcommand{\refname}{}
 \vspace{-3\baselineskip}
-{\small\bibliography{references}}
+{\small\bibliography{research_statement/references}}
 
 \end{document}
