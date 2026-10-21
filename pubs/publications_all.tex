@@ -6,6 +6,7 @@
 %% Requires references.bib alongside this file.
 
 \documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
 \renewcommand{\baselinestretch}{1} 
 \usepackage[
   a4paper,
@@ -50,9 +51,7 @@
 %% ---------------------------------------------------------------
 \usepackage[round,authoryear]{natbib}
 
-
-
-\bibliographystyle{ieeetr}
+% \bibliographystyle{ieeetr}
 % \setlength{\bibsep}{2pt plus 0.3ex}
 
 \pagestyle{fancy}
@@ -161,6 +160,11 @@
 
 \renewcommand{\bibsection}{}
 
+
+% Force superscript numbers & chronological sorting alignment
+
+% Set up your newly mocked .bst file
+\bibliographystyle{ieeetr}
 \begin{document}
 \thispagestyle{plain}
 \hrule
@@ -173,10 +177,7 @@
 \hrule height 0.5pt
 \vspace{3pt}
 
-% \normalsize
-
 \nocite{*}
-\bibliographystyle{nature} % Choose a natbib-compatible style
 \bibliography{pubs/pubs_all_hl}
 
 \end{document}
