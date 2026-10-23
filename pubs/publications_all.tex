@@ -2,8 +2,8 @@
 %% Adapted from the SOP template at
 %% http://tex.stackexchange.com/questions/150900/latex-coding-for-statement-of-purpose
 %%
-%% Compile with:  pdflatex -> bibtex -> pdflatex -> pdflatex
-%% Requires references.bib alongside this file.
+%% Compile with:  pdflatex -> biber -> pdflatex -> pdflatex  (from the repo root)
+%% Requires pubs/pubs_all_hl.bib; entries are sorted newest-first by year and month.
 
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -46,13 +46,17 @@
 }
 \setlist[itemize]{itemsep=-0.1cm, topsep=0pt, leftmargin=1.2em}
 %% ---------------------------------------------------------------
-%% Bibliography: natbib + BibTeX, author-year style.  Cite in-line
-%% with \citep{key} (parenthetical) or \citet{key} (textual).
+%% Bibliography: biblatex + biber, Nature style, sorted newest-first
+%% by year then month (add month={N} to entries in the .bib file).
 %% ---------------------------------------------------------------
-\usepackage[round,authoryear]{natbib}
-
-% \bibliographystyle{ieeetr}
-% \setlength{\bibsep}{2pt plus 0.3ex}
+\usepackage[backend=biber,style=nature,sorting=chronological,
+            giveninits=true,maxbibnames=99]{biblatex}
+\DeclareSortingTemplate{chronological}{
+  \sort{\field{presort}}
+  \sort[direction=descending]{\field[strside=left,strwidth=4]{year}}
+  \sort[direction=descending]{\field[strside=left,strwidth=2]{month}}
+  \sort{\field{sortname}\field{title}}}
+\addbibresource{pubs/pubs_all_hl.bib}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -158,13 +162,6 @@
   unicode
 ]{hyperref}
 
-\renewcommand{\bibsection}{}
-
-
-% Force superscript numbers & chronological sorting alignment
-
-% Set up your newly mocked .bst file
-\bibliographystyle{ieeetr}
 \begin{document}
 \thispagestyle{plain}
 \hrule
@@ -178,6 +175,6 @@
 \vspace{3pt}
 
 \nocite{*}
-\bibliography{pubs/pubs_all_hl}
+\printbibliography[heading=none]
 
 \end{document}
