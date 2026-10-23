@@ -26,6 +26,8 @@
 \usepackage{caption}
 \usepackage{wrapfig}
 \usepackage{graphicx}
+% Shared contributions load figures relative to research_statement/ or the repo root
+\graphicspath{{../../../../research_statement/}{../../../../}}
 \usepackage{ragged2e}
 \usepackage{blindtext}
 \usepackage{subcaption}
@@ -207,21 +209,21 @@ My previous research has focused on instrumentation development for ground based
     \centering
     \begin{subfigure}[t]{0.42\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{figures/testFig.png}
+        \includegraphics[width=0.9\textwidth]{../../../../research_statement/figures/testFig.png}
         \caption{Removal of the persistence effect in \LSSTCam\ CCDs, a dominant, time-dependent, residual charge effect \cite{MacBride2026LSSTCam}.}
         \label{fig:highlights:lsstcam}
     \end{subfigure}%
     \hfill
     \begin{subfigure}[t]{0.28\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{figures/20251114_obs.png}
+        \includegraphics[width=0.9\textwidth]{../../../../research_statement/figures/20251114_obs.png}
         \caption{The deepest wide area ToO search to date, for GW candidate S251112cm, using Vera C. Rubin Observatory \cite{MacBride2026RubinToO}.}
         \label{fig:highlights:s251112cm_search}
     \end{subfigure}%
     \hfill
     \begin{subfigure}[t]{0.28\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{figures/delve_result.png}
+        \includegraphics[width=0.9\textwidth]{../../../../research_statement/figures/delve_result.png}
         \caption{Constraints on $H_0$ using the fifth Gravitational Wave Transient Catalogue and the DELVE DR3 galaxy catalog \cite{MacBride2026DELVEH0}.}
         \label{fig:highlights:delve_result}
     \end{subfigure}
@@ -292,7 +294,7 @@ Through this concerted effort, I will propel advancements in astronomical instru
 
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{research_statement/figures/proposal_gantt_dicke.pdf}
+    \includegraphics[width=\linewidth]{../../../../research_statement/figures/proposal_gantt_dicke.pdf}
     \caption{Proposed research timeline, 2027–2029, across three themes: instrumentation, bright sirens and ToO, and dark sirens and cosmology. Solid bars mark development and analysis; hatched bars mark ongoing operations support. The dark siren program progresses from DP2 characterization and an LSST yr-1 + O4-like $H_0$ forecast to a DR1 measurement and a joint shear + siren ($H_0$, $\Omega_m$) analysis, alongside the PFS, GW-Primo and UNIONS efforts.}
     \label{fig:placeholder}
 \end{figure}
