@@ -56,7 +56,15 @@
   \sort[direction=descending]{\field[strside=left,strwidth=4]{year}}
   \sort[direction=descending]{\field[strside=left,strwidth=2]{month}}
   \sort{\field{sortname}\field{title}}}
-\addbibresource{pubs/pubs_all_hl.bib}
+\addbibresource{pubs/pubs_all.bib}
+
+\usepackage{microtype}                 % finer hyphenation and spacing
+\usepackage{xurl}                      % let URLs/DOIs break anywhere
+\setlength{\emergencystretch}{3em}     % lets LaTeX loosen a line instead of overflowing
+% \renewcommand*{\bibfont}{\raggedright} % stops stretching words to fill the line
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -75,7 +83,7 @@
 \newcommand{\yourweb}{\href{https://seanmacb.github.io}{seanmacb.github.io}}
 
 \newcommand{\hindex}{8}
-\newcommand{\hindexDate}{August 2026}
+\newcommand{\hindexDate}{October 23, 2026}
 
 \newcommand{\soptitle}{Publication List}
 
@@ -172,8 +180,8 @@
 \hrule
 \vspace{0.5pt}
 \hrule height 0.5pt
-\vspace{3pt}
-
+\vspace{12pt}
+Publication list current as of October 23, 2026. h-index of \hindex, as of \hindexDate.
 \nocite{*}
 \printbibliography[heading=none]
 
